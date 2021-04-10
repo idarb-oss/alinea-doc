@@ -1,0 +1,40 @@
+---
+title: System Parameters
+summary: The standarisation of API creation.
+authors:
+  - Idar Bergli
+date: 2021-04-06
+---
+
+Alinea's API platform provides a set of common functionality to all Alinea APIs built using the platform. In order to use and control such functionality, the platform pre-defines a special set of request parameters called system parameters. These parameters are available across all Alinea REST APIs. A system parameter can be specified either using an HTTP query parameter or an HTTP header.
+
+Most users will not need to use these parameters directly. However, they are often used by Alinea-provided client libraries. If you need to write custom code to access Alinea APIs directly, the system parameters can be useful in cases such as controlling JSON pretty-printing or specifying API Keys.
+
+## HTTP Mapping
+
+For HTTP requests, system parameters are sent as URL query parameters or HTTP request headers. For example, if you have a system parameter `$foo`, it's sent as `?$foo=xxx` in the URL, or `?%24foo=xxx` if URL-encoded. See the table below for details.
+
+!!! note
+    The **$** name prefix is added to avoid conflicting with normal request parameters.
+
+## Definitions
+
+The following table lists all system parameters and their definitions.
+
+| URL Query Parameter       | HTTP/gRPC Header       | Description                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                           | Authorization          | Authentication credentials. See [Authentication overview](https://cloud.google.com/docs/authentication) for details.                                                                                                                                                                                                                                          |
+| $alt, alt                 |                        | Alternative response format. Supported values are json (default), media.                                                                                                                                                                                                                                                             |
+| $.xgafv                   |                        | JSON error format. Supported values are 1, 2 (default). The error format 1 should only be used by legacy clients.                                                                                                                                                                                                                                             |
+| $callback, callback       |                        | JSONP callback parameter.                                                                                                                                                                                                                                                                                                                                     |
+| $ct                       | Content-Type           | HTTP Content-Type header override.                                                                                                                                                                                                                                                                                                                            |
+| $fields, fields           | X-Ali-FieldMask       | FieldMask used for response filtering. If empty, all fields will be returned.                                                                                                                                                                                                                                                      |
+|                           | X-HTTP-Method-Override | The intended HTTP method for the request. Some network proxies don't accept all HTTP methods.                                                                                                                                                                                                                                                                 |
+| $key, key                 | X-Ali-Api-Key         | Google API key, see details at https://cloud.google.com/docs/authentication/api-keys.                                                                                                                                                                                                                                                                         |
+| passwd, password          |                        | Reserved to prevent putting passwords in the URLs.                                                                                                                                                                                                                                                                                                            |
+| $prettyPrint, prettyPrint |                        | Pretty-print JSON response. Supported values are true (default), false.                                                                                                                                                                                                                                                                                       |
+| $outputDefaults           |                        | Force to output proto default values for JSON responses.                                                                                                                                                                                                                                                                                                      |
+| $unique                   |                        | Unique query parameter to disable request caching.                                                                                                                                                                                                                                                                                                            |
+|                           | X-Ali-Api-Client      | API client identification. The value is a space-separated list of NAME "/" SEMVER strings, where the NAME should only contain lowercase letters, digits, and "-", and the SEMVER should be a semantic version string. For example: X-Ali-Api-Client: python/3.5.0  linux/2.7.0.                                             |
+|                           | X-Ali-Request-Reason  | Contains a reason for making the request, which is intended to be recorded in audit logging. An example reason would be a support-case ticket number.                                                                                                                                                                                                         |
+|                           | X-Server-Timeout       | Timeout (in seconds, float value) for the server to finish processing the request. This system param only applies to REST APIs for which client-side timeout is not applicable.                                                                                                                                                                               |

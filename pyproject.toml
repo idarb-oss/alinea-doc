@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "alinea-doc"
+version = "0.1"
+description = ""
+authors = ["Idar Bergli <idarb@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs = "^1.1.2"
+mkdocs-material = "^7.1.1"
+mkdocs-git-revision-date-plugin = "^0.3.1"
+mike = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
