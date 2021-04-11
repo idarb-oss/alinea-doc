@@ -14,22 +14,20 @@ jobs:
     
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Dump Github context
-        run: echo "$GITHUB_CONTEXT"
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+      #- name: Dump Github context
+      #  run: echo "$GITHUB_CONTEXT"
+      #  env:
+      #    GITHUB_CONTEXT: ${{ toJson(github) }}
 
-      - name: Branch name
+      - name: Configure workflow
         id: branch_name
-        run: |
-          echo ::set-output name=SOURCE_NAME::${GITHUB_REF#refs/*/}
-          echo ::set-output name=SOURCE_BRANCH::${GITHUB_REF#refs/heads/}
-          echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
-
-      - name: Set GIT config
         run: |
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git config --global user.name "${{ github.actor }}"
+
+          echo ::set-output name=SOURCE_NAME::${GITHUB_REF#refs/*/}
+          echo ::set-output name=SOURCE_BRANCH::${GITHUB_REF#refs/heads/}
+          echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
 
       - uses: actions/checkout@v2
 
@@ -38,14 +36,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install Global Dependencies
+      - name: Install and configure poetry
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install poetry
-      
-      - name: Configure Poetry
-        run: |
-          poetry config virtualenvs.in-project true
+
+          poetry config virtualenvs.in-project true          
 
       - name: Cache Poetry
         uses: actions/cache@v2
@@ -59,16 +55,14 @@ jobs:
       - name: Install Package Dependencies
         run: poetry install
 
-      - name: Create version
+      - name: Create version and Publish to gh-pages
         run: |
           poetry run mike deploy $VERSION
           poetry run mike set-default $VERSION
+          git status
+          git push --force origin gh-pages
         env:
           VERSION: ${{ steps.branch_name.outputs.SOURCE_TAG }}
-
-      - name: Publish
-        run: |
-          git push --force origin HEAD:gh-pages
 
       - name: Checkout Develop
         uses: actions/checkout@v2
