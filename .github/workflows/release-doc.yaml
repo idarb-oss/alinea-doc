@@ -45,7 +45,7 @@ jobs:
       
       - name: Configure Poetry
         run: |
-          poetry config settings.virtualenvs.in-project true
+          poetry config virtualenvs.in-project true
 
       - name: Cache Poetry
         uses: actions/cache@v2
