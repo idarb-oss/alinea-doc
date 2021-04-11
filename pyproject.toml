@@ -11,8 +11,6 @@ mkdocs-material = "^7.1.1"
 mkdocs-git-revision-date-plugin = "^0.3.1"
 mike = "^0.6.0"
 
-[tool.poetry.dev-dependencies]
-
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
