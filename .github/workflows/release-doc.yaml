@@ -70,5 +70,5 @@ jobs:
       - name: Push updated version to develop
         run: |
           git add pyproject.toml
-          git commit -m "Update to latest version" -m "Docs built from release-doc workflow"
+          git diff-index --quiet HEAD || git commit -m "Update to latest version" -m "Docs built from release-doc workflow"
           git push
