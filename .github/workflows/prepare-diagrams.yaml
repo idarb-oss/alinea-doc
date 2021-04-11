@@ -1,0 +1,36 @@
+name: Prepare Diagrams
+
+on:
+  push:
+    paths:
+      - "diagrams/*"
+      
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        diagrams: [
+          multi-tenant
+        ]
+    
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Convert
+        uses: Burnett01/actions-drawio@1.0
+        with:
+          src: diagrams/${{ matrix.diagrams }}.drawio
+          dest: docs/diagrams/${{ matrix.diagrams }}.svg
+          quality: 100
+          scale: 1.0
+
+      - name: Push updated file
+        run: |
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
+
+          git add $FILE
+          git diff-index --quiet HEAD || git commit -m "Update SVG file $FILE" -m "Diagrams build from prepare-diagrams workflow"
+          git push
