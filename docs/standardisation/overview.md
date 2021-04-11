@@ -10,3 +10,4 @@ This will be a the location for the  diffrent standardisations and design guides
 
 - [APIs Design Guide](apis/introduction.md)
 - [Metadata](metadata.md)
+- [Multi-tenant](multi-tenant.md)
