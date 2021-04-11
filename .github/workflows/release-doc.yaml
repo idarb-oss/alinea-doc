@@ -64,4 +64,4 @@ jobs:
 
       - name: Publish
         run: |
-          git push origin HEAD:gh-pages
+          git push --force origin HEAD:gh-pages
