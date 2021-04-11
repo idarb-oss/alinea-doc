@@ -29,6 +29,11 @@ jobs:
           echo ::set-output name=SOURCE_BRANCH::${GITHUB_REF#refs/heads/}
           echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
 
+      - name: Checkout gh-pages
+        uses: actions/checkout@v2
+        with:
+          ref: 'gh-pages'
+
       - uses: actions/checkout@v2
 
       - name: Set up Python ${{ matrix.python-version }}
@@ -42,15 +47,6 @@ jobs:
           python -m pip install poetry
 
           poetry config virtualenvs.in-project true          
-
-      - name: Cache Poetry
-        uses: actions/cache@v2
-        with:
-          path: .venv
-          key: ${{ runner.os }}-poetry-${{ hashFiles('poetry.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-poetry-
-            ${{ runner.os }}-
 
       - name: Install Package Dependencies
         run: poetry install
@@ -74,5 +70,5 @@ jobs:
       - name: Push updated version to develop
         run: |
           git add pyproject.toml
-          git status
+          git commit -m "Update to latest version" -m "Docs built from release-doc workflow"
           git push
