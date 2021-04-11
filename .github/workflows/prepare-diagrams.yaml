@@ -11,12 +11,17 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         diagrams: [
-          multi-tenant
+          'multi-tenant'
         ]
     
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
+
+      - name: Print matrix work
+        run: |
+          echo ${{ matrix.diagrams }}
+          ls diagrams
 
       - name: Convert
         uses: Burnett01/actions-drawio@1.0
@@ -27,6 +32,8 @@ jobs:
           scale: 1.0
 
       - name: Push updated file
+        env:
+          FILE: docs/diagrams/${{ matrix.diagrams }}.svg
         run: |
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git config --global user.name "${{ github.actor }}"
