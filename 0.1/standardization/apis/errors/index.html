@@ -1,0 +1,1457 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Errors - Alinea</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#error-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Alinea" class="md-header__button md-logo" aria-label="Alinea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 48v32a16 16 0 0 1-16 16h-48v368a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16V96h-32v368a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16V352h-32a160 160 0 0 1 0-320h240a16 16 0 0 1 16 16z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alinea
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Errors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/idarb-oss/alinea-doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    idarb-oss/alinea-doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../overview/" class="md-tabs__link md-tabs__link--active">
+        Standardization
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../architecture/components/" class="md-tabs__link">
+        Architecture
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../libs/overview/" class="md-tabs__link">
+        Libraries
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../services/overview/" class="md-tabs__link">
+        Services
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../decission-log/overview/" class="md-tabs__link">
+        Decission Log
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Alinea" class="md-nav__button md-logo" aria-label="Alinea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 48v32a16 16 0 0 1-16 16h-48v368a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16V96h-32v368a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16V352h-32a160 160 0 0 1 0-320h240a16 16 0 0 1 16 16z"/></svg>
+
+    </a>
+    Alinea
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/idarb-oss/alinea-doc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    idarb-oss/alinea-doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Standardization
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Standardization" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Standardization
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../multi-tenant/" class="md-nav__link">
+        Multi-tenant
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        API Design Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API Design Guide" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          API Design Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-oriented-design/" class="md-nav__link">
+        Resource Oriented Design
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-names/" class="md-nav__link">
+        Resource Names
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standard-methods/" class="md-nav__link">
+        Standard Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-methods/" class="md-nav__link">
+        Custom Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standard-fields/" class="md-nav__link">
+        Standard Fields
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Errors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Errors
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#error-model" class="md-nav__link">
+    Error Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-codes" class="md-nav__link">
+    Error Codes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    Error Messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-details" class="md-nav__link">
+    Error Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-info" class="md-nav__link">
+    Error Info
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Info">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-localization" class="md-nav__link">
+    Error Localization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-errors" class="md-nav__link">
+    Handling Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrying-errors" class="md-nav__link">
+    Retrying Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagating-errors" class="md-nav__link">
+    Propagating Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproducing-errors" class="md-nav__link">
+    Reproducing Errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating-errors" class="md-nav__link">
+    Generating Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Generating Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-payloads" class="md-nav__link">
+    Error Payloads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../naming-conventions/" class="md-nav__link">
+        Naming Convention
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design-paterns/" class="md-nav__link">
+        Design Patterns
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-parameters/" class="md-nav__link">
+        System Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        Metadata
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Architecture
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Architecture" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Architecture
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/components/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Libraries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Libraries" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Libraries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../libs/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../libs/python/core/" class="md-nav__link">
+        Core
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Services
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Services" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../services/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Decission Log
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Decission Log" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Decission Log
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../decission-log/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#error-model" class="md-nav__link">
+    Error Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-codes" class="md-nav__link">
+    Error Codes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    Error Messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-details" class="md-nav__link">
+    Error Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-info" class="md-nav__link">
+    Error Info
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Info">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-localization" class="md-nav__link">
+    Error Localization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-errors" class="md-nav__link">
+    Handling Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrying-errors" class="md-nav__link">
+    Retrying Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagating-errors" class="md-nav__link">
+    Propagating Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproducing-errors" class="md-nav__link">
+    Reproducing Errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating-errors" class="md-nav__link">
+    Generating Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Generating Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-payloads" class="md-nav__link">
+    Error Payloads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/idarb-oss/alinea-doc/edit/master/docs/standardization/apis/errors.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Errors</h1>
+                
+                <p>This chapter provides an overview of the error model for Alinea APIs. It also provides general guidance to developers on how to properly generate and handle errors.</p>
+<p>Alinea APIs use a simple protocol-agnostic error model, which allows us to offer a consistent experience across different APIs, different API protocols (such as gRPC or HTTP), and different error contexts (such as asynchronous, batch, or workflow errors).</p>
+<h2 id="error-model">Error Model</h2>
+<p>The error model for Alinea APIs is logically defined by <a href=""><code>Status</code></a>, an instance of which is returned to the client when an API error occurs. The following code snippet shows the overall design of the error model:</p>
+<div class="highlight"><pre><span></span><code>from pydantic import BaseModel
+
+class Status(BaseModel):
+    code: int
+    message: str
+    details: dict
+</code></pre></div>
+<p>Because most Alinea APIs use resource-oriented API design, the error handling follows the same design principle by using a small set of standard errors with a large number of resources. For example, instead of defining different kinds of "not found" errors, the server uses one standard <code>NOT_FOUND</code> error code and tells the client which specific resource was not found. The smaller error space reduces the complexity of documentation, affords better idiomatic mappings in client libraries, and reduces client logic complexity while not restricting the inclusion of actionable information.</p>
+<h2 id="error-codes">Error Codes</h2>
+<p>Alinea APIs <strong>must</strong> use the canonical error codes defined by <a href=""><code>Code</code></a>. Individual APIs <strong>must</strong> avoid defining additional error codes, since developers are very unlikely to write logic to handle a large number of error codes. For reference, handling an average of 3 error codes per API call would mean most application logic would just be for error handling, which would not be a good developer experience.</p>
+<h2 id="error-messages">Error Messages</h2>
+<p>The error message should help users <strong>understand and resolve</strong> the API error easily and quickly. In general, consider the following guidelines when writing error messages:</p>
+<ul>
+<li>Do not assume the user is an expert user of your API. Users could be client developers, operations people, IT staff, or end-users of apps.</li>
+<li>Do not assume the user knows anything about your service implementation or is familiar with the context of the errors (such as log analysis).</li>
+<li>When possible, error messages should be constructed such that a technical user (but not necessarily a developer of your API) can respond to the error and correct it.</li>
+<li>Keep the error message brief. If needed, provide a link where a confused reader can ask questions, give feedback, or get more information that doesn't cleanly fit in an error message. Otherwise, use the details field to expand.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Error messages are not part of the API surface. They are subject to changes without notice. Application code <strong>must not</strong> have a hard dependency on error messages.</p>
+</div>
+<h2 id="error-details">Error Details</h2>
+<p>Alinea APIs define a set of standard error payloads for error details, which you can find in <a href="">error_details</a>. These cover the most common needs for API errors, such as quota failure and invalid parameters. Like error codes, developers should use these standard payloads whenever possible.</p>
+<p>Additional error detail types should only be introduced if they can assist application code to handle the errors. If the error information can only be handled by humans, rely on the error message content and let developers handle it manually rather than introducing additional error detail types.</p>
+<p>Here are some example <code>error_details</code> payloads:</p>
+<ul>
+<li><code>ErrorInfo</code>: Provides structured error information that is both <strong>stable</strong> and <strong>extensible</strong>.</li>
+<li><code>RetryInfo</code>: Describes when clients can retry a failed request, may be returned on <code>Code.UNAVAILABLE</code> or <code>Code.ABORTED</code></li>
+<li><code>BadRequest</code>: Describes violations in a client request, may be returned on <code>Code.INVALID_ARGUMENT</code></li>
+</ul>
+<h2 id="error-info">Error Info</h2>
+<p><a href=""><code>ErrorInfo</code></a> is a special kind of error payload. It provides <strong>stable and extensible</strong> error information that both humans and applications can depend on. Each <code>ErrorInfo</code> has 3 pieces of information: an error domain, an error reason, and a set of error metadata, such as this <a href="">example</a>. For more information, see the <a href=""><code>ErrorInfo</code></a> definition.</p>
+<p>For Alinea APIs, the primary error domain is <code>alinea.io</code>, and the corresponding error reasons are defined by <code>ErrorReason</code> enum. For more information, see the <a href=""><code>ErrorReason</code></a> definition.</p>
+<h3 id="error-localization">Error Localization</h3>
+<p>The <code>message</code> field in <a href="">Status</a> is developer-facing and <strong>must</strong> be in English.</p>
+<p>If a user-facing error message is needed, use <a href="">LocalizedMessage</a> as your details field. While the message field in <a href="">LocalizedMessage</a> can be localized, ensure that the message field in <a href="">Status</a> is in English.</p>
+<p>By default, the API service should use the authenticated user’s locale or HTTP <code>Accept-Language</code> header or the <code>language_code</code> parameter in the request to determine the language for the localization.</p>
+<h2 id="handling-errors">Handling Errors</h2>
+<p>Below is a table containing all of the error codes defined in <a href="">Code</a> and a short description of their cause. To handle an error, you can check the description for the returned status code and modify your call accordingly.</p>
+<table>
+<thead>
+<tr>
+<th>HTTP</th>
+<th>gRPC</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+<td>No error.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>INVALID_ARGUMENT</td>
+<td>Client specified an invalid argument. Check error message and error details for more information.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>FAILED_PRECONDITION</td>
+<td>Request can not be executed in the current system state, such as deleting a non-empty directory.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>OUT_OF_RANGE</td>
+<td>Client specified an invalid range.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>UNAUTHENTICATED</td>
+<td>Request not authenticated due to missing, invalid, or expired OAuth token.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>PERMISSION_DENIED</td>
+<td>Client does not have sufficient permission. This can happen because the OAuth token does not have the right scopes, the client doesn't have permission, or the API has not been enabled.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>NOT_FOUND</td>
+<td>A specified resource is not found.</td>
+</tr>
+<tr>
+<td>409</td>
+<td>ABORTED</td>
+<td>Concurrency conflict, such as read-modify-write conflict.</td>
+</tr>
+<tr>
+<td>409</td>
+<td>ALREADY_EXISTS</td>
+<td>The resource that a client tried to create already exists.</td>
+</tr>
+<tr>
+<td>499</td>
+<td>CANCELLED</td>
+<td>Request cancelled by the client.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>DATA_LOSS</td>
+<td>Unrecoverable data loss or data corruption. The client should report the error to the user.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>UNKNOWN</td>
+<td>Unknown server error. Typically a server bug.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>INTERNAL</td>
+<td>Internal server error. Typically a server bug.</td>
+</tr>
+<tr>
+<td>501</td>
+<td>NOT_IMPLEMENTED</td>
+<td>API method not implemented by the server.</td>
+</tr>
+<tr>
+<td>502</td>
+<td>N/A</td>
+<td>Network error occurred before reaching the server. Typically a network outage or misconfiguration.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>UNAVAILABLE</td>
+<td>Service unavailable. Typically the server is down.</td>
+</tr>
+<tr>
+<td>504</td>
+<td>DEADLINE_EXCEEDED</td>
+<td>Request deadline exceeded. This will happen only if the caller sets a deadline that is shorter than the method's default deadline (i.e. requested deadline is not enough for the server to process the request) and the request did not finish within the deadline.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Alinea APIs may concurrently check multiple preconditions for an API request. Returning one error code does not imply other preconditions are satisfied. Application code <strong>must not</strong> depend on the ordering of precondition checks.</p>
+</div>
+<h3 id="retrying-errors">Retrying Errors</h3>
+<p>Clients <strong>may</strong> retry on 503 UNAVAILABLE errors with exponential backoff. The minimum delay should be 1s unless it is documented otherwise. The default retry repetition should be once unless it is documented otherwise.</p>
+<p>For 429 RESOURCE_EXHAUSTED errors, the client may retry at the higher level with minimum 30s delay. Such retries are only useful for long running background jobs.</p>
+<p>For all other errors, retry may not be applicable. First ensure your request is idempotent, and see <a href="">RetryInfo</a> for guidance.</p>
+<h3 id="propagating-errors">Propagating Errors</h3>
+<p>If your API service depends on other services, you should not blindly propagate errors from those services to your clients. When translating errors, we suggest the following:</p>
+<ul>
+<li>Hide implementation details and confidential information.</li>
+<li>Adjust the party responsible for the error. For example, a server that receives an <code>INVALID_ARGUMENT</code> error from another service should propagate an <code>INTERNAL</code> to its own caller.</li>
+</ul>
+<h3 id="reproducing-errors">Reproducing Errors</h3>
+<p>If you cannot resolve errors through analysis of logs and monitoring, you should try to reproduce the errors with a simple and repeatable test. You can use the test to collect more information for troubleshooting, which you can provide when contacting technical support.</p>
+<p>We recommend you use <a href="https://github.com/google/oauth2l">oauth2l</a> and <a href="https://curl.se/docs/manpage.html">curl -v</a> and <a href="">System Parameters</a> to reproduce errors with Alinea APIs. Together they can reproduce almost all Alinea API requests, and provide you verbose debug information. For more information, see the respective documentation pages for the API you are calling.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For troubleshooting, you should include <strong>&amp;$.xgafv=2</strong> in your request URLs to select error format v2. Some Alinea APIs use error format v1 by default for compatibility reasons.</p>
+</div>
+<h2 id="generating-errors">Generating Errors</h2>
+<p>If you are a server developer, you should generate errors with enough information to help client developers understand and resolve the problem. At the same time, you must be aware of the security and privacy of the user data, and avoid disclosing sensitive information in the error message and error details, since errors are often logged and may be accessible by others. For example, an error message like "Client IP address is not on allowlist 128.0.0.0/8" exposes information about the server-side policy, which may not be accessible to the user who has access to the logs.</p>
+<p>To generate proper errors, you first need to be familiar with <a href="">Code</a> to choose the most suitable error code for each error condition. A server application may check multiple error conditions in parallel, and return the first one.</p>
+<p>The following table lists each error code and an example of a good error message.</p>
+<table>
+<thead>
+<tr>
+<th>HTTP</th>
+<th>gRPC</th>
+<th>Example Error Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>INVALID_ARGUMENT</td>
+<td>Request field x.y.z is xxx, expected one of [yyy, zzz].</td>
+</tr>
+<tr>
+<td>400</td>
+<td>FAILED_PRECONDITION</td>
+<td>Resource xxx is a non-empty directory, so it cannot be deleted.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>OUT_OF_RANGE</td>
+<td>Parameter 'age' is out of range [0, 125].</td>
+</tr>
+<tr>
+<td>401</td>
+<td>UNAUTHENTICATED</td>
+<td>Invalid authentication credentials.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>PERMISSION_DENIED</td>
+<td>Permission 'xxx' denied on resource 'yyy'.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>NOT_FOUND</td>
+<td>Resource 'xxx' not found.</td>
+</tr>
+<tr>
+<td>409</td>
+<td>ABORTED</td>
+<td>Couldn’t acquire lock on resource ‘xxx’.</td>
+</tr>
+<tr>
+<td>409</td>
+<td>ALREADY_EXISTS</td>
+<td>Resource 'xxx' already exists.</td>
+</tr>
+<tr>
+<td>499</td>
+<td>CANCELLED</td>
+<td>Request cancelled by the client.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>DATA_LOSS</td>
+<td>See note.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>UNKNOWN</td>
+<td>See note.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>INTERNAL</td>
+<td>See note.</td>
+</tr>
+<tr>
+<td>501</td>
+<td>NOT_IMPLEMENTED</td>
+<td>Method 'xxx' not implemented.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>UNAVAILABLE</td>
+<td>See note.</td>
+</tr>
+<tr>
+<td>504</td>
+<td>DEADLINE_EXCEEDED</td>
+<td>See note.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the client cannot fix the server error, it is not useful to generate additional error details. To avoid leaking sensitive information under error conditions, it is recommended not to generate any error message and only generate <strong>DebugInfo</strong> error details. The <strong>DebugInfo</strong> is specially designed only for server-side logging, and <strong>must</strong> not be sent to client.</p>
+</div>
+<h3 id="error-payloads">Error Payloads</h3>
+<p>The <code>alinea-core</code> package defines a set of standard error payloads, which are preferred to custom error payloads. The following table lists each error code and its matching standard error payload, if applicable. We recommend advanced applications look for these error payloads in <code>Status</code> when they handle errors.</p>
+<table>
+<thead>
+<tr>
+<th>HTTP</th>
+<th>gRPC</th>
+<th>Recommended Error Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>INVALID_ARGUMENT</td>
+<td>google.rpc.BadRequest</td>
+</tr>
+<tr>
+<td>400</td>
+<td>FAILED_PRECONDITION</td>
+<td>google.rpc.PreconditionFailure</td>
+</tr>
+<tr>
+<td>400</td>
+<td>OUT_OF_RANGE</td>
+<td>google.rpc.BadRequest</td>
+</tr>
+<tr>
+<td>401</td>
+<td>UNAUTHENTICATED</td>
+<td>google.rpc.ErrorInfo</td>
+</tr>
+<tr>
+<td>403</td>
+<td>PERMISSION_DENIED</td>
+<td>google.rpc.ErrorInfo</td>
+</tr>
+<tr>
+<td>404</td>
+<td>NOT_FOUND</td>
+<td>google.rpc.ResourceInfo</td>
+</tr>
+<tr>
+<td>409</td>
+<td>ABORTED</td>
+<td>google.rpc.ErrorInfo</td>
+</tr>
+<tr>
+<td>409</td>
+<td>ALREADY_EXISTS</td>
+<td>google.rpc.ResourceInfo</td>
+</tr>
+<tr>
+<td>499</td>
+<td>CANCELLED</td>
+<td></td>
+</tr>
+<tr>
+<td>500</td>
+<td>DATA_LOSS</td>
+<td>google.rpc.DebugInfo</td>
+</tr>
+<tr>
+<td>500</td>
+<td>UNKNOWN</td>
+<td>google.rpc.DebugInfo</td>
+</tr>
+<tr>
+<td>500</td>
+<td>INTERNAL</td>
+<td>google.rpc.DebugInfo</td>
+</tr>
+<tr>
+<td>501</td>
+<td>NOT_IMPLEMENTED</td>
+<td></td>
+</tr>
+<tr>
+<td>503</td>
+<td>UNAVAILABLE</td>
+<td>google.rpc.DebugInfo</td>
+</tr>
+<tr>
+<td>504</td>
+<td>DEADLINE_EXCEEDED</td>
+<td>google.rpc.DebugInfo</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2021-04-12
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../standard-fields/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Standard Fields
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../naming-conventions/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Naming Convention
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 - 2021 Idar Bergli
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>
