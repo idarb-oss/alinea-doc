@@ -67,12 +67,13 @@ extra:
 
 markdown_extensions:
   - footnotes
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.tabbed
+  - pymdownx.emoji
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.emoji:
 
