@@ -30,35 +30,51 @@ So the diffrent models for the multi-tenant solutions is as following.
 
 ```json
 {
-  "tenant": "company.com",
+  "tenant_name": "company.com",
   "database_cluster": ["database1:9042", "database2:9042"],
   "keyspace": "keyspace_name",
   "secrets": {
     "db_user": { "server": "https://vault.com", "key": "secret-key" },
     "db_password": { "server": "https://vault.com", "key": "secret-key" }
-  }
+  },
+  "create_time": "2014-07-30T10:43:17Z",
+  "update_time": "2014-07-30T10:43:17Z",
+  "delete_time": "2016-07-30T10:43:17Z"
 }
 ```
 
 | Key              | Type          | Description                                                                                        |
 | ---------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-| tenant           | string        | The tenant name that is an valid DNS name (as per [RFC 1035](http://www.ietf.org/rfc/rfc1035.txt)) |
+| tenant_name      | string        | The tenant name that is an valid DNS name (as per [RFC 1035](http://www.ietf.org/rfc/rfc1035.txt)) |
 | database_cluster | array[string] | An array of strings with database connection infor in <ip/dns>:<port>                              |
 | keyspace         | string        | The name of the keyspace in the database cluster                                                   |
 | secrets          | object        | And object with key that is the name of the secret with an object with secret server and key name  |
-
-The url specification will be as following to show the tenant in use
-
-> https://[domain]/@[tenant]/projects/[project_id]/
+| create_time      | Timestamp     | When the tenant was created                                                                        |
+| update_time      | Timestamp     | When the tenant was updated                                                                        |
+| delete_time      | Timestamp     | When the tenant was registered for deletion                                                        |
 
 ### Project
 
 ```json
 {
-  "id": "7dfb5f8a-a6f0-412c-8b61-320dc85b083d"
+  "project_name": "project1",
+  "description": "Project looking to solving of ....",
+  "create_time": "2014-07-30T10:43:17Z",
+  "update_time": "2014-07-30T10:43:17Z",
+  "delete_time": "2016-07-30T10:43:17Z"
 }
 ```
 
-| Key | Type   | Description                   |
-| --- | ------ | ----------------------------- |
-| id  | string | The id of the project in UUID |
+| Key          | Type      | Description                                  |
+| ------------ | --------- | -------------------------------------------- |
+| project_name | string    | The name of the project                      |
+| description  | string    | A short description of the proejct           |
+| create_time  | Timestamp | When the project was created                 |
+| update_time  | Timestamp | When the project was updated                 |
+| delete_time  | Timestamp | When the project was registered for deletion |
+
+### URL
+
+The url specification will be as following to show the tenant in and what project
+
+> https://[domain]/@[tenant_name]/projects/[project_name]/

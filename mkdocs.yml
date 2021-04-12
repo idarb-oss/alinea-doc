@@ -6,22 +6,22 @@ repo_url: https://github.com/idarb-oss/alinea-doc
 nav:
   - Home: 'index.md'
   #- 'Quick Start': 'quick-start.md'
-  - Standardisation:
-      - Overview: 'standardisation/overview.md'
-      - 'Multi-tenant': standardisation/multi-tenant.md
+  - Standardization:
+      - Overview: 'standardization/overview.md'
+      - 'Multi-tenant': standardization/multi-tenant.md
       - 'API Design Guide':
-        - Introduction: 'standardisation/apis/introduction.md'
-        - 'Resource Oriented Design': 'standardisation/apis/resource-oriented-design.md'
-        - 'Resource Names': 'standardisation/apis/resource-names.md'
-        - 'Standard Methods': 'standardisation/apis/standard-methods.md'
-        - 'Custom Methods': 'standardisation/apis/custom-methods.md'
-        - 'Standard Fields': 'standardisation/apis/standard-fields.md'
-        - 'Errors': 'standardisation/apis/errors.md'
-        - 'Naming Convention': 'standardisation/apis/naming-conventions.md'
-        - 'Design Patterns': 'standardisation/apis/design-paterns.md'
-        - 'System Parameters': 'standardisation/apis/system-parameters.md'
-        - 'Changelog': 'standardisation/apis/changelog.md'
-      - 'Metadata': standardisation/metadata.md
+        - Introduction: 'standardization/apis/introduction.md'
+        - 'Resource Oriented Design': 'standardization/apis/resource-oriented-design.md'
+        - 'Resource Names': 'standardization/apis/resource-names.md'
+        - 'Standard Methods': 'standardization/apis/standard-methods.md'
+        - 'Custom Methods': 'standardization/apis/custom-methods.md'
+        - 'Standard Fields': 'standardization/apis/standard-fields.md'
+        - 'Errors': 'standardization/apis/errors.md'
+        - 'Naming Convention': 'standardization/apis/naming-conventions.md'
+        - 'Design Patterns': 'standardization/apis/design-paterns.md'
+        - 'System Parameters': 'standardization/apis/system-parameters.md'
+        - 'Changelog': 'standardization/apis/changelog.md'
+      - 'Metadata': standardization/metadata.md
   - Architecture:
     - 'Components': 'architecture/components.md'
   - Libraries:
@@ -44,6 +44,7 @@ theme:
     code: Roboto Mono
   language: en
   icon:
+    logo: fontawesome/solid/paragraph
     repo: fontawesome/brands/github-alt
   features:
     - navigation.tabs
@@ -73,3 +74,5 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+
