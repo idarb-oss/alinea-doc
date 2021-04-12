@@ -8,6 +8,7 @@ nav:
   #- 'Quick Start': 'quick-start.md'
   - Standardisation:
       - Overview: 'standardisation/overview.md'
+      - 'Multi-tenant': standardisation/multi-tenant.md
       - 'API Design Guide':
         - Introduction: 'standardisation/apis/introduction.md'
         - 'Resource Oriented Design': 'standardisation/apis/resource-oriented-design.md'
