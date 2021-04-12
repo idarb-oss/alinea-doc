@@ -6,4 +6,7 @@ authors:
 date: 2021-04-08
 ---
 
+!!! warning
+    In planning phase
+
 The metadata is standarized around the ISO ##### standard and will be the basis om the hierarchy and metadata added to the parts of the system.

@@ -9,7 +9,7 @@ date: 2021-03-28
 # Alinea
 
 !!! warning
-    Alinea has just started is far away ready for any use.
+    Alinea has just started and is **far away** ready for any use.
 
 !!! note
     Still beeing written...
@@ -20,9 +20,9 @@ Alinea is an open source data collection platform that can be used on the `edge`
 
 ## Why
 
-In a world where collecting data and get valid descision making out of those data is getting more and more available there are still lots of issues around how this can be done in the industries. Some part of this is that `cloud` dose not solve everything, there are clear issues with this like latency and the speed of data collection to decission making.
+In a world where collecting data and get valid descision making out of those data is getting more and more available, there are still lots of issues around how this can be done in the industries. Some part of this is that `cloud` dose not solve everything, there are clear issues with latency and the speed of data collection to decission making (depending on what needs decission is beeing done).
 
-There are standards that are beeing talked about and companies tries to take into use, but most often they ends up as `buzz words` and we most often end up in the same habit as we always are in. One of these words are [Industry 4.0](https://www.plattform-i40.de/PI40/Navigation/EN/Industrie40/WhatIsIndustrie40/what-is-industrie40.html) that has been out there for a long time and the term was first used in `2011`.
+There are standards that are beeing talked about and companies tries to take into use, but most often they ends up as `buzz words` and we most often end up in the same habit as we always are in. One of these are [Industry 4.0](https://www.plattform-i40.de/PI40/Navigation/EN/Industrie40/WhatIsIndustrie40/what-is-industrie40.html) that has been out there for a long time and the term was first used in `2011`. In `Industry 4.0` is all about Aritifial Inteligence (AI), Machine Learning (ML) and so forth that in many cases are not so straight forward as we would like it to be.
 
 `Industry 4.0` are an important and necessary way, but it is hard to achive. And the reason for this seems to be mostly of little open standards and vendors that wants to make it hard for the producing industry. Most of the industry out there are not companies hiering developers that devlop their own software/hardware or any other type of the needed parts of the large puzzle. Since this would be very expensive in the long run.
 

@@ -39,6 +39,11 @@ Databases that will be and might be used in Alinea
 - **[MQTT](https://mqtt.org/)** is an popular IoT messaging standard used many places. This will be taken into use in Alinea for external types of streams and connections. Tough internal messaging will be what is described in [Event Backbone](#event backbone).
 - **[NATS](https://nats.io/)** if we need a broker inbetween and _ZeroMQ_ is not enough _NATS_ will be looked into.
 
+## Serializing
+
+- **[Blosc](https://www.blosc.org/) super fast library for serializing data.
+- **[msgpack](https://msgpack.org/) efficient binary serializing format.
+
 ## Search
 
 - **[MeiliSearch](https://www.meilisearch.com/)** will be the main service used for searchable parts in Alinea.

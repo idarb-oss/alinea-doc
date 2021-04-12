@@ -46,7 +46,7 @@ So the diffrent models for the multi-tenant solutions is as following.
 | Key              | Type          | Description                                                                                        |
 | ---------------- | ------------- | -------------------------------------------------------------------------------------------------- |
 | tenant_name      | string        | The tenant name that is an valid DNS name (as per [RFC 1035](http://www.ietf.org/rfc/rfc1035.txt)) |
-| database_cluster | array[string] | An array of strings with database connection infor in <ip/dns>:<port>                              |
+| database_cluster | array[string] | An array of strings with database connection infor in [ip/dns]:[port]                              |
 | keyspace         | string        | The name of the keyspace in the database cluster                                                   |
 | secrets          | object        | And object with key that is the name of the secret with an object with secret server and key name  |
 | create_time      | Timestamp     | When the tenant was created                                                                        |
