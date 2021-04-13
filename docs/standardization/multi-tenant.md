@@ -31,8 +31,7 @@ So the diffrent models for the multi-tenant solutions is as following.
 ```json
 {
   "tenant_name": "company.com",
-  "database_cluster": ["database1:9042", "database2:9042"],
-  "keyspace": "keyspace_name",
+  "database_connection": ["database1:9042", "database2:9042"],
   "secrets": {
     "db_user": { "server": "https://vault.com", "key": "secret-key" },
     "db_password": { "server": "https://vault.com", "key": "secret-key" }
@@ -43,21 +42,26 @@ So the diffrent models for the multi-tenant solutions is as following.
 }
 ```
 
-| Key              | Type          | Description                                                                                        |
-| ---------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-| tenant_name      | string        | The tenant name that is an valid DNS name (as per [RFC 1035](http://www.ietf.org/rfc/rfc1035.txt)) |
-| database_cluster | array[string] | An array of strings with database connection infor in [ip/dns]:[port]                              |
-| keyspace         | string        | The name of the keyspace in the database cluster                                                   |
-| secrets          | object        | And object with key that is the name of the secret with an object with secret server and key name  |
-| create_time      | Timestamp     | When the tenant was created                                                                        |
-| update_time      | Timestamp     | When the tenant was updated                                                                        |
-| delete_time      | Timestamp     | When the tenant was registered for deletion                                                        |
+| Key                 | Type          | Description                                                                                        |
+| ------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
+| tenant_name         | string        | The tenant name that is an valid DNS name (as per [RFC 1035](http://www.ietf.org/rfc/rfc1035.txt)) |
+| database_connection | array[string] | An array of strings with database connection infor in `database_connection_string`                 |
+| secrets             | object        | And object with key that is the name of the secret with an object with secret server and key name  |
+| create_time         | Timestamp     | When the tenant was created                                                                        |
+| update_time         | Timestamp     | When the tenant was updated                                                                        |
+| delete_time         | Timestamp     | When the tenant was registered for deletion                                                        |
 
 ### Project
 
 ```json
 {
   "project_name": "project1",
+  "database_schema": "schema_name",
+  "identity_provider": "identity_provider",
+  "secrets": {
+    "client_id": { "server": "https://vault.com", "key": "client-id" },
+    "client_secret": { "server": "https://vault.com", "key": "client-secret" }
+  },
   "description": "Project looking to solving of ....",
   "create_time": "2014-07-30T10:43:17Z",
   "update_time": "2014-07-30T10:43:17Z",
@@ -65,16 +69,23 @@ So the diffrent models for the multi-tenant solutions is as following.
 }
 ```
 
-| Key          | Type      | Description                                  |
-| ------------ | --------- | -------------------------------------------- |
-| project_name | string    | The name of the project                      |
-| description  | string    | A short description of the proejct           |
-| create_time  | Timestamp | When the project was created                 |
-| update_time  | Timestamp | When the project was updated                 |
-| delete_time  | Timestamp | When the project was registered for deletion |
+| Key               | Type      | Description                                                                                      |
+| ----------------- | --------- | ------------------------------------------------------------------------------------------------ |
+| project_name      | string    | The name of the project                                                                          |
+| database_schema   | string    | The name of the schema/keyspace in the database cluster                                          |
+| identity_provider | string    | Information about the identity provider for the tenant                                           |
+| secrets           | object    | An object with key's that is the name of the secret with an object with secret location and name |
+| description       | string    | A short description of the proejct                                                               |
+| create_time       | Timestamp | When the project was created                                                                     |
+| update_time       | Timestamp | When the project was updated                                                                     |
+| delete_time       | Timestamp | When the project was registered for deletion                                                     |
 
 ### URL
 
 The url specification will be as following to show the tenant in and what project
 
 > https://[domain]/@[tenant_name]/projects/[project_name]/
+
+or
+
+> https://[tenant_name].domain/projects/[project_name]/
