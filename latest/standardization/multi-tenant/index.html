@@ -895,7 +895,11 @@
                 
                   <h1>Multi-tenant</h1>
                 
-                <p>Altough designing for an multi-tenant solution might looke like an over kill, it is also a good excersise on how this type of solution can be done.</p>
+                <div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Under progress</p>
+</div>
+<p>Altough designing for an multi-tenant solution might looke like an over kill, it is also a good excersise on how this type of solution can be done.</p>
 <p>The multi-tenancy will be based on an <code>tenant</code> that can have multiple <code>projects</code>. In many cases a <code>tenant</code> can be similar to an enterprise or just a regular user that has theyr own setup and configuration. <code>Projects</code> are an seperation of individual parts innside an tenant.</p>
 <h2 id="explanation">Explanation</h2>
 <p>The basic model for the multi-tenancy is a table storing the needed information on where the tenant data is located. In this solution we will be able to either use multiple databases where one tenant has theire own or collect multipe tenants in one database. The way we can do this is to give a tenant their own keyspace as seen in the figures.</p>
