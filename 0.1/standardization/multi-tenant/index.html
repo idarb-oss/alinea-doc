@@ -908,8 +908,7 @@
 <h3 id="tenant-directory">Tenant Directory</h3>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;tenant_name&quot;</span><span class="p">:</span> <span class="s2">&quot;company.com&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;database_cluster&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;database1:9042&quot;</span><span class="p">,</span> <span class="s2">&quot;database2:9042&quot;</span><span class="p">],</span>
-  <span class="nt">&quot;keyspace&quot;</span><span class="p">:</span> <span class="s2">&quot;keyspace_name&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;database_connection&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;database1:9042&quot;</span><span class="p">,</span> <span class="s2">&quot;database2:9042&quot;</span><span class="p">],</span>
   <span class="nt">&quot;secrets&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;db_user&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;https://vault.com&quot;</span><span class="p">,</span> <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;secret-key&quot;</span> <span class="p">},</span>
     <span class="nt">&quot;db_password&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;https://vault.com&quot;</span><span class="p">,</span> <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;secret-key&quot;</span> <span class="p">}</span>
@@ -934,14 +933,9 @@
 <td>The tenant name that is an valid DNS name (as per <a href="http://www.ietf.org/rfc/rfc1035.txt">RFC 1035</a>)</td>
 </tr>
 <tr>
-<td>database_cluster</td>
+<td>database_connection</td>
 <td>array[string]</td>
-<td>An array of strings with database connection infor in [ip/dns]:[port]</td>
-</tr>
-<tr>
-<td>keyspace</td>
-<td>string</td>
-<td>The name of the keyspace in the database cluster</td>
+<td>An array of strings with database connection infor in <code>database_connection_string</code></td>
 </tr>
 <tr>
 <td>secrets</td>
@@ -968,6 +962,12 @@
 <h3 id="project">Project</h3>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;project_name&quot;</span><span class="p">:</span> <span class="s2">&quot;project1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;database_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;schema_name&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identity_provider&quot;</span><span class="p">:</span> <span class="s2">&quot;identity_provider&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;secrets&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;client_id&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;https://vault.com&quot;</span><span class="p">,</span> <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;client-id&quot;</span> <span class="p">},</span>
+    <span class="nt">&quot;client_secret&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;https://vault.com&quot;</span><span class="p">,</span> <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;client-secret&quot;</span> <span class="p">}</span>
+  <span class="p">},</span>
   <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Project looking to solving of ....&quot;</span><span class="p">,</span>
   <span class="nt">&quot;create_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-07-30T10:43:17Z&quot;</span><span class="p">,</span>
   <span class="nt">&quot;update_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-07-30T10:43:17Z&quot;</span><span class="p">,</span>
@@ -987,6 +987,21 @@
 <td>project_name</td>
 <td>string</td>
 <td>The name of the project</td>
+</tr>
+<tr>
+<td>database_schema</td>
+<td>string</td>
+<td>The name of the schema/keyspace in the database cluster</td>
+</tr>
+<tr>
+<td>identity_provider</td>
+<td>string</td>
+<td>Information about the identity provider for the tenant</td>
+</tr>
+<tr>
+<td>secrets</td>
+<td>object</td>
+<td>An object with key's that is the name of the secret with an object with secret location and name</td>
 </tr>
 <tr>
 <td>description</td>
@@ -1015,6 +1030,10 @@
 <blockquote>
 <p>https://[domain]/@[tenant_name]/projects/[project_name]/</p>
 </blockquote>
+<p>or</p>
+<blockquote>
+<p>https://[tenant_name].domain/projects/[project_name]/</p>
+</blockquote>
                 
                   
                     
@@ -1023,7 +1042,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-12
+      Last update: 2021-04-13
     
   </small>
 </div>
