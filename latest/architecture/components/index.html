@@ -351,30 +351,18 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../standardization/multi-tenant/" class="md-nav__link">
-        Multi-tenant
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
-      <label class="md-nav__link" for="__nav_2_3">
+      <label class="md-nav__link" for="__nav_2_2">
         API Design Guide
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="API Design Guide" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
+        <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           API Design Guide
         </label>
@@ -514,18 +502,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../standardization/metadata/" class="md-nav__link">
-        Metadata
-      </a>
     </li>
   
 
@@ -700,13 +676,6 @@
           <li class="md-nav__item">
   <a href="#secret-store" class="md-nav__link">
     Secret Store
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#networking" class="md-nav__link">
-    Networking
   </a>
   
 </li>
@@ -1035,13 +1004,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#networking" class="md-nav__link">
-    Networking
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1074,19 +1036,11 @@
                   <h1>Components</h1>
                 
                 <p>Here we will document and list up the diffrent components not developed in Alinea that will be taken into use.</p>
-<p>Some standard things will be used everywhere and that is:</p>
-<ul>
-<li><strong><a href="https://www.docker.com/">Docker</a></strong> for containerize.</li>
-<li><strong><a href="https://cloudevents.io/">CloudEvents</a></strong> for messaging.</li>
-<li><strong><a href="https://msgpack.org/">msgpack</a></strong> for binary serialization format.</li>
-<li><strong><a href="https://opentelemetry.io/">Open Telemetry</a></strong> for getting metrics and logs out of custom services.</li>
-<li><strong><a href="https://www.mkdocs.org/">MkDocs</a></strong> for all documentations with <a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a> as common theme. If needed for a diffrent documentation system <a href="https://www.sphinx-doc.org/en/master/">sphinx</a> can be taken into use.</li>
-</ul>
 <h2 id="database">Database</h2>
 <p>Databases that will be and might be used in Alinea</p>
 <h3 id="nosql">NoSQL</h3>
 <ul>
-<li><strong><a href="https://www.scylladb.com/">ScyllaDB</a></strong> will be the main database used for services created.</li>
+<li><strong><a href="https://www.scylladb.com/">ScyllaDB</a></strong> will be the main database used for services created. Its the same as Cassandra but written in C++ instead of Java.</li>
 </ul>
 <h3 id="sql">SQL</h3>
 <ul>
@@ -1099,14 +1053,13 @@
 </ul>
 <h2 id="messaging">Messaging</h2>
 <ul>
-<li><strong><a href="https://zeromq.org/">ZeroMQ</a></strong> will be the main messaging libary used in Alinea.</li>
-<li><strong><a href="https://mqtt.org/">MQTT</a></strong> is an popular IoT messaging standard used many places. This will be taken into use in Alinea for external types of streams and connections. Tough internal messaging will be what is described in <a href="#event backbone">Event Backbone</a>.</li>
-<li><strong><a href="https://nats.io/">NATS</a></strong> if we need a broker inbetween and <em>ZeroMQ</em> is not enough <em>NATS</em> will be looked into.</li>
+<li><strong><a href="https://nng.nanomsg.org/">NNG</a></strong> for messaging transport or <strong><a href="https://zeromq.org/">ZeroMQ</a></strong></li>
+<li><strong><a href="https://mqtt.org/">MQTT</a></strong> is an popular IoT messaging standard used many places. This might be looked into aswell.</li>
 </ul>
 <h2 id="serializing">Serializing</h2>
 <ul>
-<li>**<a href="https://www.blosc.org/">Blosc</a> super fast library for serializing data.</li>
-<li>**<a href="https://msgpack.org/">msgpack</a> efficient binary serializing format.</li>
+<li><strong><a href="https://www.blosc.org/">Blosc</a></strong> super fast library for serializing data.</li>
+<li><strong><a href="https://msgpack.org/">msgpack</a></strong> efficient binary serializing format.</li>
 </ul>
 <h2 id="search">Search</h2>
 <ul>
@@ -1124,11 +1077,11 @@
 </ul>
 <h3 id="web-development">Web development</h3>
 <ul>
-<li><strong><a href="">Typescript</a></strong> will be the go to language used for the web.</li>
+<li><strong><a href="https://www.typescriptlang.org/">Typescript</a></strong> will be the go to language used for the web.</li>
 <li><strong><a href="https://reactjs.org/">React</a></strong> or <strong><a href="https://angular.io/">Angular</a></strong> will be the main JavaScript library used for web frontend development.</li>
 </ul>
 <h2 id="security">Security</h2>
-<p>Diffrent components used for security</p>
+<p>Diffrent components that might be used for security</p>
 <h3 id="security-and-identity">Security and Identity</h3>
 <ul>
 <li><strong><a href="https://spiffe.io/docs/latest/spire-about/">SPIRE</a></strong> that is based on <a href="https://spiffe.io/">SPIFFE</a><blockquote>
@@ -1139,11 +1092,6 @@
 <h3 id="secret-store">Secret Store</h3>
 <ul>
 <li><strong><a href="https://www.hashicorp.com/products/vault">Vault</a></strong> will be the secret store to be used when not running in the cloud.</li>
-<li><strong><a href="https://azure.microsoft.com/nb-no/services/key-vault/">Key Vault</a></strong> will be the used secret store used in Azure Cloud.</li>
-</ul>
-<h3 id="networking">Networking</h3>
-<ul>
-<li><strong><a href="https://www.hashicorp.com/products/consul">Consule</a></strong> used for dicovery and to connect securily across any cloud runtimes.</li>
 </ul>
 <h2 id="automation">Automation</h2>
 <ul>
@@ -1157,7 +1105,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-13
+      Last update: 2021-04-15
     
   </small>
 </div>
@@ -1180,7 +1128,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../standardization/metadata/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../standardization/apis/changelog/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1189,7 +1137,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Metadata
+              Changelog
             </div>
           </div>
         </a>

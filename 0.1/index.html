@@ -389,30 +389,18 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="standardization/multi-tenant/" class="md-nav__link">
-        Multi-tenant
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
-      <label class="md-nav__link" for="__nav_2_3">
+      <label class="md-nav__link" for="__nav_2_2">
         API Design Guide
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="API Design Guide" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
+        <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           API Design Guide
         </label>
@@ -552,18 +540,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="standardization/metadata/" class="md-nav__link">
-        Metadata
-      </a>
     </li>
   
 
@@ -832,16 +808,30 @@
                 <h1 id="alinea">Alinea</h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Alinea has just started and is <strong>far away</strong> ready for any use.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Still beeing written...</p>
+<p>Alinea is under ideation</p>
 </div>
 <blockquote>
 <p>"Beginning of a new way of thinking" or <em>a linea</em>, refering to &para; new paragraph.</p>
 </blockquote>
-<p>Alinea is an open source data collection platform that can be used on the <code>edge</code> as well in the <code>cloud</code>. An important part of the design is to make it with the minimum of lock in effects as possible. Some lockin will usualy be needed and those parts will be highlightet as part of the documentation. Alltough some lock in issues might be solved by having clearly defined interfaces where adapters can be created or use communication protocols where those can be standarized.</p>
+<p>Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. A common way these days are to use some kind of brokered message passing where we have a centralized queueing system. Alltough in the industry what we see more of is communication by use of a mesh nettwork. In a microservice type of architecture message passing is a common way to communicate and in many cases this is done by use of <a href="https://www.rabbitmq.com/"><code>RabbitMQ</code></a>, <a href="https://nats.io/"><code>NATS</code></a> or other brokered services. A brokered communication is based on as seen in figure 1 and a mesh type of communication as seen in figure2.</p>
+<p>In Alinea we will look into and reasearch the use of meshed nettworking and how we could rather incoperate that in the microservice architecture. So what we will start looking into with the use of a mesh nettwork are:</p>
+<ul>
+<li><strong>Discovery</strong> how do we learn about other nodes on the network.</li>
+<li><strong>Presence</strong> how do we track when other nodes come and go.</li>
+<li><strong>Connectivity</strong> how do we actually connect one node to another</li>
+<li><strong>Point-to-point messaging</strong> how do we send a message from one node to another.</li>
+<li><strong>Group messaging</strong> how do we send a message from one node to a group of others.</li>
+<li><strong>Distributed Logging</strong> how do we track what this cloud of nodes is doing so we can detect performance problems and failures.</li>
+<li><strong>Content distribution</strong> how do we send content from one node to another.</li>
+</ul>
+<p><img alt="brokered" src="diagrams/communication-brokered.svg" /></p>
+<blockquote>
+<p>Figure1: Brokered communication where all communication goes thrue a centralized system.</p>
+</blockquote>
+<p><img alt="brokered" src="diagrams/communication-mesh.svg" /></p>
+<blockquote>
+<p>Figure2: Mesh based nettworking where where we can see we got 3 diffrent <code>devices</code> or <code>sevices</code> creating the mesh nettwork.</p>
+</blockquote>
 <h2 id="license-mit">License MIT</h2>
 <p>Copyright (c) 2021-2021 Idar Bergli</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining
@@ -868,7 +858,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-13
+      Last update: 2021-04-15
     
   </small>
 </div>
