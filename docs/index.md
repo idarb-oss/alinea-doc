@@ -9,14 +9,30 @@ date: 2021-03-28
 # Alinea
 
 !!! warning
-    Alinea has just started and is **far away** ready for any use.
+    Alinea is under ideation
 
-!!! note
-    Still beeing written...
 
 > "Beginning of a new way of thinking" or _a linea_, refering to &para; new paragraph.
 
-Alinea is an open source data collection platform that can be used on the `edge` as well in the `cloud`. An important part of the design is to make it with the minimum of lock in effects as possible. Some lockin will usualy be needed and those parts will be highlightet as part of the documentation. Alltough some lock in issues might be solved by having clearly defined interfaces where adapters can be created or use communication protocols where those can be standarized.
+Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. A common way these days are to use some kind of brokered message passing where we have a centralized queueing system. Alltough in the industry what we see more of is communication by use of a mesh nettwork. In a microservice type of architecture message passing is a common way to communicate and in many cases this is done by use of [`RabbitMQ`](https://www.rabbitmq.com/), [`NATS`](https://nats.io/) or other brokered services. A brokered communication is based on as seen in figure 1 and a mesh type of communication as seen in figure2.
+
+In Alinea we will look into and reasearch the use of meshed nettworking and how we could rather incoperate that in the microservice architecture. So what we will start looking into with the use of a mesh nettwork are:
+
+- **Discovery** how do we learn about other nodes on the network.
+- **Presence** how do we track when other nodes come and go.
+- **Connectivity** how do we actually connect one node to another
+- **Point-to-point messaging** how do we send a message from one node to another.
+- **Group messaging** how do we send a message from one node to a group of others.
+- **Distributed Logging** how do we track what this cloud of nodes is doing so we can detect performance problems and failures.
+- **Content distribution** how do we send content from one node to another.
+
+![brokered](diagrams/communication-brokered.svg)
+
+> Figure1: Brokered communication where all communication goes thrue a centralized system.
+
+![brokered](diagrams/communication-mesh.svg)
+
+> Figure2: Mesh based nettworking where where we can see we got 3 diffrent `devices` or `sevices` creating the mesh nettwork.
 ## License MIT
 
 Copyright (c) 2021-2021 Idar Bergli
