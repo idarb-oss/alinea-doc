@@ -8,7 +8,6 @@ nav:
   #- 'Quick Start': 'quick-start.md'
   - Standardization:
       - Overview: 'standardization/overview.md'
-      - 'Multi-tenant': standardization/multi-tenant.md
       - 'API Design Guide':
         - Introduction: 'standardization/apis/introduction.md'
         - 'Resource Oriented Design': 'standardization/apis/resource-oriented-design.md'
@@ -21,7 +20,6 @@ nav:
         - 'Design Patterns': 'standardization/apis/design-paterns.md'
         - 'System Parameters': 'standardization/apis/system-parameters.md'
         - 'Changelog': 'standardization/apis/changelog.md'
-      - 'Metadata': standardization/metadata.md
   - Architecture:
     - 'Components': 'architecture/components.md'
   - Libraries:

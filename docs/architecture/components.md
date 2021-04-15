@@ -8,21 +8,13 @@ date: 2021-04-09
 
 Here we will document and list up the diffrent components not developed in Alinea that will be taken into use.
 
-Some standard things will be used everywhere and that is:
-
-- **[Docker](https://www.docker.com/)** for containerize.
-- **[CloudEvents](https://cloudevents.io/)** for messaging.
-- **[msgpack](https://msgpack.org/)** for binary serialization format.
-- **[Open Telemetry](https://opentelemetry.io/)** for getting metrics and logs out of custom services.
-- **[MkDocs](https://www.mkdocs.org/)** for all documentations with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) as common theme. If needed for a diffrent documentation system [sphinx](https://www.sphinx-doc.org/en/master/) can be taken into use.
-
 ## Database
 
 Databases that will be and might be used in Alinea
 
 ### NoSQL
 
-- **[ScyllaDB](https://www.scylladb.com/)** will be the main database used for services created.
+- **[ScyllaDB](https://www.scylladb.com/)** will be the main database used for services created. Its the same as Cassandra but written in C++ instead of Java.
 
 ### SQL
 
@@ -35,14 +27,13 @@ Databases that will be and might be used in Alinea
 
 ## Messaging
 
-- **[ZeroMQ](https://zeromq.org/)** will be the main messaging libary used in Alinea.
-- **[MQTT](https://mqtt.org/)** is an popular IoT messaging standard used many places. This will be taken into use in Alinea for external types of streams and connections. Tough internal messaging will be what is described in [Event Backbone](#event backbone).
-- **[NATS](https://nats.io/)** if we need a broker inbetween and _ZeroMQ_ is not enough _NATS_ will be looked into.
+- **[NNG](https://nng.nanomsg.org/)** for messaging transport or **[ZeroMQ](https://zeromq.org/)**
+- **[MQTT](https://mqtt.org/)** is an popular IoT messaging standard used many places. This might be looked into aswell.
 
 ## Serializing
 
-- **[Blosc](https://www.blosc.org/) super fast library for serializing data.
-- **[msgpack](https://msgpack.org/) efficient binary serializing format.
+- **[Blosc](https://www.blosc.org/)** super fast library for serializing data.
+- **[msgpack](https://msgpack.org/)** efficient binary serializing format.
 
 ## Search
 
@@ -62,12 +53,12 @@ The diffrent components that we will standarize on for web and API development.
 
 ### Web development
 
-- **[Typescript]()** will be the go to language used for the web.
+- **[Typescript](https://www.typescriptlang.org/)** will be the go to language used for the web.
 - **[React](https://reactjs.org/)** or **[Angular](https://angular.io/)** will be the main JavaScript library used for web frontend development.
 
 ## Security
 
-Diffrent components used for security
+Diffrent components that might be used for security
 
 ### Security and Identity
 
@@ -77,11 +68,6 @@ Diffrent components used for security
 ### Secret Store
 
 - **[Vault](https://www.hashicorp.com/products/vault)** will be the secret store to be used when not running in the cloud.
-- **[Key Vault](https://azure.microsoft.com/nb-no/services/key-vault/)** will be the used secret store used in Azure Cloud.
-
-### Networking
-
-- **[Consule](https://www.hashicorp.com/products/consul)** used for dicovery and to connect securily across any cloud runtimes.
 
 ## Automation
 

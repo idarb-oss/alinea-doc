@@ -82,7 +82,7 @@ API service: Assets
 - A collection of assets: projects/\*/assets/\*
     - A collection of subscriptions: projects/\*/assets/\*/lables/\*
 
-### Cloud Spanner API
+### Data Set API
 
 The Data Set service implements the Data Set API, which defines the following resource model:
 
