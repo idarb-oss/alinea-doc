@@ -29,7 +29,7 @@ Alinea is trial to look into how to get an on-premise solution for data gatherin
 In Alinea we will look into and use of meshed nettworking/communication and how we could rather incoperate that in the microservice architecture. So what we will start looking into are:
 
 - **Multi-tenancy** how can be have a meshed communication in a multi-tenant system.
-- **Intrusive** microservice to enable deep customization in multi-tenancy. For more info look the [document from SINTEF](https://sintef.brage.unit.no/sintef-xmlui/bitstream/handle/11250/2586190/Using_Intrusive_Microservices_to_Enable_Deep_Customization_of_Multi_Tenant_SaaS.pdf?sequence=4).
+- **Intrusive** microservice to enable deep customization in multi-tenancy. For more info look at the [document from SINTEF](https://sintef.brage.unit.no/sintef-xmlui/bitstream/handle/11250/2586190/Using_Intrusive_Microservices_to_Enable_Deep_Customization_of_Multi_Tenant_SaaS.pdf?sequence=4).
 - **Discovery** how do we learn about other nodes and services on the network.
 - **Presence** how do we track when other nodes and services come and go.
 - **Connectivity** how do we actually connect one node or service to another.
