@@ -335,6 +335,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-to-solve" class="md-nav__link">
+    What to solve
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license-mit" class="md-nav__link">
     License MIT
   </a>
@@ -782,6 +789,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-to-solve" class="md-nav__link">
+    What to solve
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license-mit" class="md-nav__link">
     License MIT
   </a>
@@ -813,17 +827,7 @@
 <blockquote>
 <p>"Beginning of a new way of thinking" or <em>a linea</em>, refering to &para; new paragraph.</p>
 </blockquote>
-<p>Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. A common way these days are to use some kind of brokered message passing where we have a centralized queueing system. Alltough in the industry what we see more of is communication by use of a mesh nettwork. In a microservice type of architecture message passing is a common way to communicate and in many cases this is done by use of <a href="https://www.rabbitmq.com/"><code>RabbitMQ</code></a>, <a href="https://nats.io/"><code>NATS</code></a> or other brokered services. A brokered communication is based on as seen in figure 1 and a mesh type of communication as seen in figure2.</p>
-<p>In Alinea we will look into and reasearch the use of meshed nettworking and how we could rather incoperate that in the microservice architecture. So what we will start looking into with the use of a mesh nettwork are:</p>
-<ul>
-<li><strong>Discovery</strong> how do we learn about other nodes on the network.</li>
-<li><strong>Presence</strong> how do we track when other nodes come and go.</li>
-<li><strong>Connectivity</strong> how do we actually connect one node to another</li>
-<li><strong>Point-to-point messaging</strong> how do we send a message from one node to another.</li>
-<li><strong>Group messaging</strong> how do we send a message from one node to a group of others.</li>
-<li><strong>Distributed Logging</strong> how do we track what this cloud of nodes is doing so we can detect performance problems and failures.</li>
-<li><strong>Content distribution</strong> how do we send content from one node to another.</li>
-</ul>
+<p>Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. A common way these days are to use some kind of brokered message passing where we have a centralized queueing system. Alltough in the industry what we see more of is communication by use of a mesh nettwork. In a microservice type of architecture message passing is a common way to communicate and in many cases this is done by use of <a href="https://kafka.apache.org/">Kafka</a>, <a href="https://www.rabbitmq.com/"><code>RabbitMQ</code></a>, <a href="https://nats.io/"><code>NATS</code></a> or other brokered services. A brokered communication is based on as seen in figure 1 and a mesh type of communication as seen in figure2.</p>
 <p><img alt="brokered" src="diagrams/communication-brokered.svg" /></p>
 <blockquote>
 <p>Figure1: Brokered communication where all communication goes thrue a centralized system.</p>
@@ -832,6 +836,19 @@
 <blockquote>
 <p>Figure2: Mesh based nettworking where where we can see we got 3 diffrent <code>devices</code> or <code>sevices</code> creating the mesh nettwork.</p>
 </blockquote>
+<h2 id="what-to-solve">What to solve</h2>
+<p>In Alinea we will look into and use of meshed nettworking/communication and how we could rather incoperate that in the microservice architecture. So what we will start looking into are:</p>
+<ul>
+<li><strong>Multi-tenancy</strong> how can be have a meshed communication in a multi-tenant system.</li>
+<li><strong>Intrusive</strong> microservice to enable deep customization in multi-tenancy. For more info look the <a href="https://sintef.brage.unit.no/sintef-xmlui/bitstream/handle/11250/2586190/Using_Intrusive_Microservices_to_Enable_Deep_Customization_of_Multi_Tenant_SaaS.pdf?sequence=4">document from SINTEF</a>.</li>
+<li><strong>Discovery</strong> how do we learn about other nodes and services on the network.</li>
+<li><strong>Presence</strong> how do we track when other nodes and services come and go.</li>
+<li><strong>Connectivity</strong> how do we actually connect one node or service to another.</li>
+<li><strong>Point-to-point messaging</strong> how do we send a message from one node or service to another.</li>
+<li><strong>Group messaging</strong> how do we send a message from one node or service to a group of others.</li>
+<li><strong>Distributed Logging</strong> how do we track what this cloud of nodes/service is doing so we can detect performance problems and failures.</li>
+<li><strong>Content distribution</strong> how do we send content from one node or service to another.</li>
+</ul>
 <h2 id="license-mit">License MIT</h2>
 <p>Copyright (c) 2021-2021 Idar Bergli</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining
@@ -858,7 +875,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-15
+      Last update: 2021-04-16
     
   </small>
 </div>
