@@ -769,7 +769,9 @@
 <p class="admonition-title">Warning</p>
 <p>Under progress</p>
 </div>
-<p>Tenant Manager is an service that controls where the diffrent tenants goes in Alinea, and is based on the description in the <a href="../../standardization/multi-tenant/">standardization document</a>.</p>
+<p>The tenant-manager is a service that manges all the registered tenants in the system. The manager will be used to register the different customizastion points used for the <em>non-intrusive</em> service created by a tenant.</p>
+<p>The manager will have an database bassen on <em>ScyllaDB</em> where everything is registered and where the standard services and check what extension points has been registered and the endpoints for where the events should be sendt.</p>
+<p>The manager will provide an administrative API that can be used to add, remove or alter customizastion registrations without having to redeploy the Tenant Manager or accessing the database directly.</p>
 <h2 id="model">Model</h2>
                 
                   
@@ -779,7 +781,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-16
+      Last update: 2021-04-17
     
   </small>
 </div>

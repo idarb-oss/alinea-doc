@@ -946,7 +946,7 @@
 <li>A collection contains a list of resources of <strong>the same type</strong>. For example, a user has a collection of contacts.</li>
 <li>A resource has some state and zero or more sub-resources. Each sub-resource can be either a simple resource or a collection resource.</li>
 </ul>
-<p>For example, Gmail API has a collection of users, each user has a collection of messages, a collection of threads, a collection of labels, a profile resource, and several setting resources.</p>
+<p>For example, Raw API has a collection of databases, each user has a collection of tables, a collection of rows.</p>
 <p>While there is some conceptual alignment between storage systems and REST APIs, a service with a resource-oriented API is not necessarily a database, and has enormous flexibility in how it interprets resources and methods. For example, creating a calendar event (resource) may create additional events for attendees, send email invitations to attendees, reserve conference rooms, and update video conference schedules.</p>
 <h2 id="methods">Methods</h2>
 <p>The key characteristic of a resource-oriented API is that it emphasizes resources (data model) over the methods performed on the resources (functionality). A typical resource-oriented API exposes a large number of resources with a small number of methods. The methods can be either the standard methods or custom methods. For this guide, the standard methods are: <code>List</code>, <code>Get</code>, <code>Create</code>, <code>Update</code>, and <code>Delete</code>.</p>
@@ -993,7 +993,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-16
+      Last update: 2021-04-17
     
   </small>
 </div>
