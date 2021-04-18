@@ -18,7 +18,7 @@ Alinea is trial to look into how to get an on-premise solution for data gatherin
 ## What to solve
 
 - **Multi-tenancy** how can be have a split diffrent parts in their own tenants.
-- **Non-intrusive** microservice to enable deep customization in multi-tenancy. For more info [non-intrusive](https://www.duo.uio.no/bitstream/handle/10852/79791/Thesis.pdf?sequence=14&isAllowed=y).
+- **Non-intrusive** microservice to enable deep customization in multi-tenancy.
 - **Discovery** how do we learn about other nodes and services on the network.
 - **Presence** how do we track when other nodes and services come and go.
 - **Connectivity** how do we actually connect one node or service to another.

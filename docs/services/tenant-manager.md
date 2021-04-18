@@ -29,9 +29,9 @@ Figure1 shows the sequence of how we sould send and event from an extension poin
 
 **Figure1**: Generic sequence for event isolation
 
-## Event Capturing
+### Event Capturing
 
-A tenants customisation microservice can consume events from that are published to the Event Bus of the main product, something whenever something of note occurs.
+A tenants customisation microservice can consume events from that are published to the Event Bus of the main product, something whenever something of note occurs. The event bus is designed as a multi-tenant aware interface, with the necessary functionality to subscribe and unsubscribe to events, as well as publishing them.
 
 ![event-isolation-flow](../diagrams/tenant-manager-event-isolation-flow.svg)
 
@@ -41,5 +41,14 @@ A tenants customisation microservice can consume events from that are published 
 
 **Figure3**: Generic event capturing sequence diagram
 
-## Model
+### Architecture
+
+So from the proposed parts of event isolation for extending the part of the application above we get the following generic diagram of an architecture. See figure4 for the details.
+
+![architecture](../diagrams/tenant-manager-general-architecture.svg)
+
+**Figure4**: Generic architecture
+
+## Data Model
+
 
