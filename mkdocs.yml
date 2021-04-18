@@ -28,6 +28,7 @@ nav:
       - Core: 'libs/python/core.md'
   - Services:
     - Overview: 'services/overview.md'
+    - 'Tenant Manager': 'services/tenant-manager.md'
   - 'Decission Log':
     - Overview: 'decission-log/overview.md'
 
