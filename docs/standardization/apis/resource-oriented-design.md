@@ -45,7 +45,7 @@ A resource-oriented API is generally modeled as a resource hierarchy, where each
 - A collection contains a list of resources of **the same type**. For example, a user has a collection of contacts.
 - A resource has some state and zero or more sub-resources. Each sub-resource can be either a simple resource or a collection resource.
 
-For example, Gmail API has a collection of users, each user has a collection of messages, a collection of threads, a collection of labels, a profile resource, and several setting resources.
+For example, Raw API has a collection of databases, each user has a collection of tables, a collection of rows.
 
 While there is some conceptual alignment between storage systems and REST APIs, a service with a resource-oriented API is not necessarily a database, and has enormous flexibility in how it interprets resources and methods. For example, creating a calendar event (resource) may create additional events for attendees, send email invitations to attendees, reserve conference rooms, and update video conference schedules.
 

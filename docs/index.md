@@ -14,22 +14,11 @@ date: 2021-03-28
 
 > "Beginning of a new way of thinking" or _a linea_, refering to &para; new paragraph.
 
-Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. A common way these days are to use some kind of brokered message passing where we have a centralized queueing system. Alltough in the industry what we see more of is communication by use of a mesh nettwork. In a microservice type of architecture message passing is a common way to communicate and in many cases this is done by use of [Kafka](https://kafka.apache.org/), [`RabbitMQ`](https://www.rabbitmq.com/), [`NATS`](https://nats.io/) or other brokered services. A brokered communication is based on as seen in figure 1 and a mesh type of communication as seen in figure2.
-
-![brokered](diagrams/communication-brokered.svg)
-
-> Figure1: Brokered communication where all communication goes thrue a centralized system.
-
-![brokered](diagrams/communication-mesh.svg)
-
-> Figure2: Mesh based nettworking where where we can see we got 3 diffrent `devices` or `sevices` creating the mesh nettwork.
-
+Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. 
 ## What to solve
 
-In Alinea we will look into and use of meshed nettworking/communication and how we could rather incoperate that in the microservice architecture. So what we will start looking into are:
-
-- **Multi-tenancy** how can be have a meshed communication in a multi-tenant system.
-- **Intrusive** microservice to enable deep customization in multi-tenancy. For more info look at the [document from SINTEF](https://sintef.brage.unit.no/sintef-xmlui/bitstream/handle/11250/2586190/Using_Intrusive_Microservices_to_Enable_Deep_Customization_of_Multi_Tenant_SaaS.pdf?sequence=4).
+- **Multi-tenancy** how can be have a split diffrent parts in their own tenants.
+- **Non-intrusive** microservice to enable deep customization in multi-tenancy. For more info [non-intrusive](https://www.duo.uio.no/bitstream/handle/10852/79791/Thesis.pdf?sequence=14&isAllowed=y).
 - **Discovery** how do we learn about other nodes and services on the network.
 - **Presence** how do we track when other nodes and services come and go.
 - **Connectivity** how do we actually connect one node or service to another.

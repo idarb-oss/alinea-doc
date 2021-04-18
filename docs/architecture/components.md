@@ -29,6 +29,7 @@ Databases that will be and might be used in Alinea
 
 - **[NNG](https://nng.nanomsg.org/)** for messaging transport or **[ZeroMQ](https://zeromq.org/)**
 - **[MQTT](https://mqtt.org/)** is an popular IoT messaging standard used many places. This might be looked into aswell.
+- **[NATS](https://nats.io/)** is a brokered messaging service.
 
 ## Serializing
 
