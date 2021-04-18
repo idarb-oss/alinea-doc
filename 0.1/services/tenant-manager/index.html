@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model" class="md-skip">
+        <a href="#event-isolation" class="md-skip">
           Skip to content
         </a>
       
@@ -221,13 +221,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../overview/" class="md-tabs__link">
+      <a href="../overview/" class="md-tabs__link md-tabs__link--active">
         Services
       </a>
     </li>
@@ -639,12 +641,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         Services
@@ -665,6 +669,66 @@
       <a href="../overview/" class="md-nav__link">
         Overview
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tenant Manager
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Tenant Manager
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#event-isolation" class="md-nav__link">
+    Event Isolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-capturing" class="md-nav__link">
+    Event Capturing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    Model
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -740,6 +804,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#event-isolation" class="md-nav__link">
+    Event Isolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-capturing" class="md-nav__link">
+    Event Capturing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#model" class="md-nav__link">
     Model
   </a>
@@ -772,6 +850,19 @@
 <p>The tenant-manager is a service that manges all the registered tenants in the system. The manager will be used to register the different customizastion points used for the <em>non-intrusive</em> service created by a tenant.</p>
 <p>The manager will have an database bassen on <em>ScyllaDB</em> where everything is registered and where the standard services and check what extension points has been registered and the endpoints for where the events should be sendt.</p>
 <p>The manager will provide an administrative API that can be used to add, remove or alter customizastion registrations without having to redeploy the Tenant Manager or accessing the database directly.</p>
+<h2 id="event-isolation">Event Isolation</h2>
+<p>Isolation of events in an integral part of tenant isolation. That means that one tenant should not be able to access the data of another tenant in any shape or form.</p>
+<p>The  Event  Bus  implementation  and  architecture  in  the  main  product  must  ensure  that  tenant isolation is still preserved. Instead of having one connection to a single event bus, there must be multiple connections, one per tenant. One example of such an event bus implementation is base on <a href="https://nats.io/">NATS</a> that can make use of <a href="https://docs.nats.io/nats-server/configuration/securing_nats/accounts">accounts</a>. Another way if the solution should be running in Azure Cloud is to use <a href="">Service Bus</a> where we have a topic per tenant. Or each tenant could have their own service bus, but that would increase the resource usage and cost.</p>
+<p>This way allows us to easly seperate logicaly per tenant, and the permission can easily be set so that each tenant is only allowed to interact with their own account, topic or event bus. The tenant’s microservices, however, only need one single connection to theirevent bus. Because there are now multiple connections to different event buses in the main product, all  the  events  must  have  the  tenant  information  set,  so  that  the  main  product  knows  which event bus to use.</p>
+<p>Figure1 shows the sequence of how we sould send and event from an extension point for a tenant.</p>
+<p><img alt="event-isolation-sequence" src="../../diagrams/event-isolation-seq.svg" /></p>
+<p><strong>Figure1</strong>: Generic sequence for event isolation</p>
+<h2 id="event-capturing">Event Capturing</h2>
+<p>A tenants customisation microservice can consume events from that are published to the Event Bus of the main product, something whenever something of note occurs.</p>
+<p><img alt="event-isolation-flow" src="../../diagrams/tenant-manager-event-isolation-flow.svg" /></p>
+<p><strong>Figure2</strong>: Generic activity diagram for event isolation</p>
+<p><img alt="event-capturing" src="../../diagrams/tenant-manager-event-capturing.svg" /></p>
+<p><strong>Figure3</strong>: Generic event capturing sequence diagram</p>
 <h2 id="model">Model</h2>
                 
                   
@@ -781,7 +872,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-17
+      Last update: 2021-04-18
     
   </small>
 </div>
@@ -801,6 +892,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../overview/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../decission-log/overview/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Overview
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
