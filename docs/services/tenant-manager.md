@@ -23,7 +23,23 @@ The  Event  Bus  implementation  and  architecture  in  the  main  product  must
 
 This way allows us to easly seperate logicaly per tenant, and the permission can easily be set so that each tenant is only allowed to interact with their own account, topic or event bus. The tenant’s microservices, however, only need one single connection to theirevent bus. Because there are now multiple connections to different event buses in the main product, all  the  events  must  have  the  tenant  information  set,  so  that  the  main  product  knows  which event bus to use.
 
-![event isolation sequence](../diagrams/)
+Figure1 shows the sequence of how we sould send and event from an extension point for a tenant.
+
+![event-isolation-sequence](../diagrams/event-isolation-seq.svg)
+
+**Figure1**: Generic sequence for event isolation
+
+## Event Capturing
+
+A tenants customisation microservice can consume events from that are published to the Event Bus of the main product, something whenever something of note occurs.
+
+![event-isolation-flow](../diagrams/tenant-manager-event-isolation-flow.svg)
+
+**Figure2**: Generic activity diagram for event isolation
+
+![event-capturing](../diagrams/tenant-manager-event-capturing.svg)
+
+**Figure3**: Generic event capturing sequence diagram
 
 ## Model
 
