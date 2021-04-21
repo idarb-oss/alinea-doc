@@ -12,18 +12,11 @@ Here we will document and list up the diffrent components not developed in Aline
 
 Databases that will be and might be used in Alinea
 
-### NoSQL
-
-- **[ScyllaDB](https://www.scylladb.com/)** will be the main database used for services created. Its the same as Cassandra but written in C++ instead of Java.
-
-### SQL
-
-- **[SQLite](https://www.sqlite.org/index.html)** some services can be using the SQLite database in the background.
-- **[PostgreSQL](https://www.postgresql.org/)** will be used if a SQL database is needed in certain situations.
+- **[Yugabyte](https://www.yugabyte.com/)** is the database to be used. Can be an SQL (Postgre) and NoSQL (Cassandra) in one.
 
 ### Graph
 
-- **[JanusGraph](https://janusgraph.org/)** there might be some experimental with Graph. Since _ScyllaDB_ will be the main NoSQL storage used JanusGraph fits perfectly inn with that. JanusGraph uses the [gremlin](https://tinkerpop.apache.org/) query language.
+- **[JanusGraph](https://janusgraph.org/)** there might be some experimental with Graph. Since _Yugabyte_ will be the main NoSQL storage used JanusGraph fits perfectly inn with that. JanusGraph uses the [gremlin](https://tinkerpop.apache.org/) query language.
 
 ## Messaging
 

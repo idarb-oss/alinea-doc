@@ -22,6 +22,7 @@ nav:
         - 'Changelog': 'standardization/apis/changelog.md'
   - Architecture:
     - 'Components': 'architecture/components.md'
+    - 'Hardware': 'architecture/hardware.md'
   - Libraries:
     - Overview: 'libs/overview.md'
     - Python:
