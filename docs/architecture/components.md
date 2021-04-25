@@ -48,7 +48,7 @@ The diffrent components that we will standarize on for web and API development.
 ### Web development
 
 - **[Typescript](https://www.typescriptlang.org/)** will be the go to language used for the web.
-- **[React](https://reactjs.org/)** or **[Angular](https://angular.io/)** will be the main JavaScript library used for web frontend development.
+- **[Svelte](https://svelte.dev/)** for the frontend development.
 
 ## Security
 
