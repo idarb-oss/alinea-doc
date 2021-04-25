@@ -578,20 +578,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nosql" class="md-nav__link">
-    NoSQL
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
-    SQL
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#graph" class="md-nav__link">
     Graph
   </a>
@@ -696,6 +682,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
     </li>
   
 
@@ -914,20 +912,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nosql" class="md-nav__link">
-    NoSQL
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
-    SQL
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#graph" class="md-nav__link">
     Graph
   </a>
@@ -1050,18 +1034,12 @@
                 <p>Here we will document and list up the diffrent components not developed in Alinea that will be taken into use.</p>
 <h2 id="database">Database</h2>
 <p>Databases that will be and might be used in Alinea</p>
-<h3 id="nosql">NoSQL</h3>
 <ul>
-<li><strong><a href="https://www.scylladb.com/">ScyllaDB</a></strong> will be the main database used for services created. Its the same as Cassandra but written in C++ instead of Java.</li>
-</ul>
-<h3 id="sql">SQL</h3>
-<ul>
-<li><strong><a href="https://www.sqlite.org/index.html">SQLite</a></strong> some services can be using the SQLite database in the background.</li>
-<li><strong><a href="https://www.postgresql.org/">PostgreSQL</a></strong> will be used if a SQL database is needed in certain situations.</li>
+<li><strong><a href="https://www.yugabyte.com/">Yugabyte</a></strong> is the database to be used. Can be an SQL (Postgre) and NoSQL (Cassandra) in one.</li>
 </ul>
 <h3 id="graph">Graph</h3>
 <ul>
-<li><strong><a href="https://janusgraph.org/">JanusGraph</a></strong> there might be some experimental with Graph. Since <em>ScyllaDB</em> will be the main NoSQL storage used JanusGraph fits perfectly inn with that. JanusGraph uses the <a href="https://tinkerpop.apache.org/">gremlin</a> query language.</li>
+<li><strong><a href="https://janusgraph.org/">JanusGraph</a></strong> there might be some experimental with Graph. Since <em>Yugabyte</em> will be the main NoSQL storage used JanusGraph fits perfectly inn with that. JanusGraph uses the <a href="https://tinkerpop.apache.org/">gremlin</a> query language.</li>
 </ul>
 <h2 id="messaging">Messaging</h2>
 <ul>
@@ -1091,7 +1069,7 @@
 <h3 id="web-development">Web development</h3>
 <ul>
 <li><strong><a href="https://www.typescriptlang.org/">Typescript</a></strong> will be the go to language used for the web.</li>
-<li><strong><a href="https://reactjs.org/">React</a></strong> or <strong><a href="https://angular.io/">Angular</a></strong> will be the main JavaScript library used for web frontend development.</li>
+<li><strong><a href="https://svelte.dev/">Svelte</a></strong> for the frontend development.</li>
 </ul>
 <h2 id="security">Security</h2>
 <p>Diffrent components that might be used for security</p>
@@ -1118,7 +1096,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-18
+      Last update: 2021-04-25
     
   </small>
 </div>
@@ -1156,13 +1134,13 @@
         </a>
       
       
-        <a href="../../libs/overview/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../hardware/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Overview
+              Hardware
             </div>
           </div>
           <div class="md-footer__button md-icon">
