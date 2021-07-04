@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-03T19:01:53.863Z" agent="5.0 (X11)" etag="UinY04Lh68uDJlALWhEK" version="14.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-04T09:35:26.788Z" agent="5.0 (X11)" etag="md2RpdDpi7EQoZLZzvWY" version="14.8.2" type="github">
   <diagram id="osi2iYBc9gxS-sZSW_7Z" name="Tenant Manager">
     <mxGraphModel dx="1673" dy="965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -118,10 +118,10 @@
         <mxCell id="T4bOe-kPn4xxBbJlTrUV-51" value="ClientId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="T4bOe-kPn4xxBbJlTrUV-49" vertex="1">
           <mxGeometry y="52" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="T4bOe-kPn4xxBbJlTrUV-52" value="SecretLocation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="T4bOe-kPn4xxBbJlTrUV-49" vertex="1">
+        <mxCell id="T4bOe-kPn4xxBbJlTrUV-52" value="Client Secret" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="T4bOe-kPn4xxBbJlTrUV-49" vertex="1">
           <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="T4bOe-kPn4xxBbJlTrUV-61" value="SecretKey" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="T4bOe-kPn4xxBbJlTrUV-49" vertex="1">
+        <mxCell id="T4bOe-kPn4xxBbJlTrUV-61" value="Description" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="T4bOe-kPn4xxBbJlTrUV-49" vertex="1">
           <mxGeometry y="104" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="T4bOe-kPn4xxBbJlTrUV-53" value="*" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
