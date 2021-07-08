@@ -15,6 +15,10 @@ The manager will have an database bassen on _ScyllaDB_ where everything is regis
 
 The manager will provide an administrative API that can be used to add, remove or alter customizastion registrations without having to redeploy the Tenant Manager or accessing the database directly.
 
+## Domain Design
+
+
+
 ## Event Isolation
 
 Isolation of events in an integral part of tenant isolation. That means that one tenant should not be able to access the data of another tenant in any shape or form.
@@ -48,7 +52,3 @@ So from the proposed parts of event isolation for extending the part of the appl
 ![architecture](../diagrams/tenant-manager-general-architecture.svg)
 
 **Figure4**: Generic architecture
-
-## Data Model
-
-

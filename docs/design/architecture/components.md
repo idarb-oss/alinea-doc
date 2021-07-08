@@ -20,7 +20,6 @@ Databases that will be and might be used in Alinea
 
 ## Messaging
 
-- **[NNG](https://nng.nanomsg.org/)** for messaging transport or **[ZeroMQ](https://zeromq.org/)**
 - **[MQTT](https://mqtt.org/)** is an popular IoT messaging standard used many places. This might be looked into aswell.
 - **[NATS](https://nats.io/)** is a brokered messaging service.
 
@@ -43,6 +42,7 @@ The diffrent components that we will standarize on for web and API development.
 
 ### Backends
 
+- **[dotnet](https://dotnet.microsoft.com)** will be one of the main frameworks to be used.
 - **[Fastapi](https://fastapi.tiangolo.com/)** will be the main API development framework for [python](https://www.python.org/).
 
 ### Web development
@@ -53,6 +53,11 @@ The diffrent components that we will standarize on for web and API development.
 ## Security
 
 Diffrent components that might be used for security
+
+### Authentication / Authorization
+
+- **[auth0](https://auth0.com/)** Auth0 is an easy to implement, adaptable authentication and authorization platform.
+
 
 ### Security and Identity
 
@@ -65,4 +70,5 @@ Diffrent components that might be used for security
 
 ## Automation
 
+- **[Ansible](https://www.ansible.com/)** Simple, agentless IT automation.
 - **[Terraform](https://www.hashicorp.com/products/terraform)** will be the go to infrastructure as code if the need is there.

@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Domain Driven Design
 summary:
 authors:
   - Idar Bergli

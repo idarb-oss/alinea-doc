@@ -6,15 +6,25 @@ authors:
 date: 2021-03-28
 ---
 
-# Alinea
-
 !!! warning
     Alinea is under ideation
 
-
 > "Beginning of a new way of thinking" or _a linea_, refering to &para; new paragraph.
 
-Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. 
+Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. Alltough we will here start by creating an `monolith` type of application it will have clear seperations of `bouded contextes`. This will make the possibility to split out and segregate the diffrent parts later if needed depengin on how certain services needs to scale.
+
+As mentioned this project will _try_ to have clear and descriptive `bounded contextes` that which is a description comming from the `Domain Driven Design` terminology created by `Eric Evans`.
+> **Bounded Context** explicitly define the context within which a model applies. Explicitly set boundaries in terms of team organization, usage within specific parts of the application, and physical manifestations such as code bases and database schemas. Apply Continuous Integration to keep model concepts and terms strictly consistent within these bounds, but don't be distracted or confused by issues outside. Standardize a singel development process withn the context, which need not be used elsewhere.
+
+For more information on the process to find contextes and the driving design descision read more in [design]() part of this documentation space.
+
+After a lot of thinking the following main programing lanauge will be used in this project and that is [.NET 5 C#](https://dotnet.microsoft.com/) alltough [Python](https://www.python.org/) will also be used in certain
+situations. When it comes to the frontend the desision and been take to use [Svelte](https://svelte.dev/) as the web base solution alltough everything will be API base so any frontend can be created for the solution.
+
+## Event Driven
+
+[Event Driven](https://martinfowler.com/articles/201701-event-driven.html) architecture or patterns will be an central part of this system.
+
 ## What to solve
 
 - **Multi-tenancy** how can be have a split diffrent parts in their own tenants.
@@ -22,10 +32,7 @@ Alinea is trial to look into how to get an on-premise solution for data gatherin
 - **Discovery** how do we learn about other nodes and services on the network.
 - **Presence** how do we track when other nodes and services come and go.
 - **Connectivity** how do we actually connect one node or service to another.
-- **Point-to-point messaging** how do we send a message from one node or service to another.
-- **Group messaging** how do we send a message from one node or service to a group of others.
 - **Distributed Logging** how do we track what this cloud of nodes/service is doing so we can detect performance problems and failures.
-- **Content distribution** how do we send content from one node or service to another.
 
 ## License MIT
 

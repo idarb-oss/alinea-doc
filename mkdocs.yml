@@ -5,31 +5,33 @@ repo_url: https://github.com/idarb-oss/alinea-doc
 
 nav:
   - Home: 'index.md'
-  #- 'Quick Start': 'quick-start.md'
-  - Standardization:
-      - Overview: 'standardization/overview.md'
+  - Design:
+    - Overview: 'design/overview.md'
+    - 'Domain Driven Design': 'design/ddd.md'
+    - Standardization:
+      - Overview: 'design/standardization/overview.md'
       - 'API Design Guide':
-        - Introduction: 'standardization/apis/introduction.md'
-        - 'Resource Oriented Design': 'standardization/apis/resource-oriented-design.md'
-        - 'Resource Names': 'standardization/apis/resource-names.md'
-        - 'Standard Methods': 'standardization/apis/standard-methods.md'
-        - 'Custom Methods': 'standardization/apis/custom-methods.md'
-        - 'Standard Fields': 'standardization/apis/standard-fields.md'
-        - 'Errors': 'standardization/apis/errors.md'
-        - 'Naming Convention': 'standardization/apis/naming-conventions.md'
-        - 'Design Patterns': 'standardization/apis/design-paterns.md'
-        - 'System Parameters': 'standardization/apis/system-parameters.md'
-        - 'Changelog': 'standardization/apis/changelog.md'
-  - Architecture:
-    - 'Components': 'architecture/components.md'
-    - 'Hardware': 'architecture/hardware.md'
-  - Libraries:
-    - Overview: 'libs/overview.md'
-    - Python:
-      - Core: 'libs/python/core.md'
+        - Introduction: 'design/standardization/apis/introduction.md'
+        - 'Resource Oriented Design': 'design/standardization/apis/resource-oriented-design.md'
+        - 'Resource Names': 'design/standardization/apis/resource-names.md'
+        - 'Standard Methods': 'design/standardization/apis/standard-methods.md'
+        - 'Custom Methods': 'design/standardization/apis/custom-methods.md'
+        - 'Standard Fields': 'design/standardization/apis/standard-fields.md'
+        - 'Errors': 'design/standardization/apis/errors.md'
+        - 'Naming Convention': 'design/standardization/apis/naming-conventions.md'
+        - 'Design Patterns': 'design/standardization/apis/design-paterns.md'
+        - 'System Parameters': 'design/standardization/apis/system-parameters.md'
+        - 'Changelog': 'design/standardization/apis/changelog.md'
+    - Architecture:
+      - 'Overview': 'design/architecture/overview.md'
   - Services:
     - Overview: 'services/overview.md'
-    - 'Tenant Manager': 'services/tenant-manager.md'
+    - 'Tenant System': 'services/tenant-manager.md'
+    - 'Project System': 'services/project-manager.md'
+  - Libraries:
+    - Overview: 'libs/overview.md'
+    - Dotnet:
+      - Overview: 'libs/dotnet/overview.md'
   - 'Decission Log':
     - Overview: 'decission-log/overview.md'
 
