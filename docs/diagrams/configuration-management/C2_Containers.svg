@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1011px" preserveAspectRatio="none" style="width:874px;height:1011px;background:#FFFFFF;" version="1.1" viewBox="0 0 874 1011" width="874px" zoomAndPan="magnify"><defs/><g><!--MD5=[84dda40acb3410cad7262261daba2aaf]
+cluster c1--><g id="cluster_c1"><rect height="651" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="514" x="171.5" y="201"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="55" x="401" y="217.8516">Alinea</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="61" x="398" y="232.7637">[System]</text></g><!--MD5=[b1e3d2dcb3697de9e6328d1cb436cbc4]
+entity frontend--><g id="elem_frontend"><rect fill="#438DD5" height="71.2188" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="179" x="206" y="252"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="124" x="233.5" y="276.8516">Web frontend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="293.5" y="293.6201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="216" y="309.917">GUI for the application</text></g><!--MD5=[4e8ecd94af36cce41665c9f079adf9fd]
+entity backend--><g id="elem_backend"><rect fill="#438DD5" height="103.8125" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="148" x="187.5" y="586"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="122" x="197.5" y="610.8516">Configuration</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="118" x="202.5" y="629.4766">Management</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="69" x="227" y="644.3887">[.NET Core]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="259.5" y="660.2139"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="230.5" y="676.5107">Backend</text></g><!--MD5=[8646c2813b1a4602b37914127a769b9c]
+entity backendForFrontend--><g id="elem_backendForFrontend"><rect fill="#438DD5" height="85.1875" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="216" x="187.5" y="412"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="196" x="197.5" y="436.8516">Backend for Frontend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="69" x="261" y="451.7637">[.NET Core]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="293.5" y="467.5889"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="284.5" y="483.8857">API</text></g><!--MD5=[f50ff5e4cd64f259303fc83dba1819fc]
+entity database--><g id="elem_database"><path d="M461.5,599.5 C461.5,589.5 565.5,589.5 565.5,589.5 C565.5,589.5 669.5,589.5 669.5,599.5 L669.5,676.0156 C669.5,686.0156 565.5,686.0156 565.5,686.0156 C565.5,686.0156 461.5,686.0156 461.5,676.0156 L461.5,599.5 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M461.5,599.5 C461.5,609.5 565.5,609.5 565.5,609.5 C565.5,609.5 669.5,609.5 669.5,599.5 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="86" x="522.5" y="628.3516">Database</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="563.5" y="645.1201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="497" y="661.417">Data about clients,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="471.5" y="677.7139">environments, cluster etc..</text></g><!--MD5=[e3e91991f24f92e737d9e6cb749965e2]
+entity eventBus--><g id="elem_eventBus"><path d="M195.5,793 L327.5,793 C332.5,793 332.5,814.2969 332.5,814.2969 C332.5,814.2969 332.5,835.5938 327.5,835.5938 L195.5,835.5938 C190.5,835.5938 190.5,814.2969 190.5,814.2969 C190.5,814.2969 190.5,793 195.5,793 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M327.5,793 C322.5,793 322.5,814.2969 322.5,814.2969 C322.5,835.5938 327.5,835.5938 327.5,835.5938 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="90" x="211.5" y="812.8516">Event Bus</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="122" x="195.5" y="827.7637">[Integration Events]</text></g><!--MD5=[55f2968de154b8cc740615bf6e5af92f]
+entity owner--><g id="elem_owner"><rect fill="#08427B" height="119.2188" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="153" x="7" y="7"/><image height="48" width="48" x="59.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="17"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="59" x="54" y="79.8516">Owner</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="81.5" y="96.6201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="21" y="112.917">Owner of an client</text></g><!--MD5=[026b3f9ae447cd6258ef99d33f5de6cf]
+entity editor--><g id="elem_editor"><rect fill="#08427B" height="119.2188" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="201" x="195" y="7"/><image height="48" width="48" x="271.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="17"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="54" x="268.5" y="79.8516">Editor</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="293.5" y="96.6201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="209" y="112.917">Editor access to an client</text></g><!--MD5=[e1c93bc9be729354515e9ba3224548de]
+entity reader--><g id="elem_reader"><rect fill="#08427B" height="119.2188" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="196" x="431.5" y="7"/><image height="48" width="48" x="505.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="17"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="64" x="497.5" y="79.8516">Reader</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="527.5" y="96.6201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="445.5" y="112.917">Read access to an client</text></g><!--MD5=[38bfa9dc6018363cafe15f923a4b8db9]
+entity service--><g id="elem_service"><rect fill="#999999" height="71.2188" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="167" x="701" y="779"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="147" x="711" y="803.8516">External Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="782.5" y="820.6201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="726.5" y="836.917">3rd party service</text></g><!--MD5=[b49a0a4acbeedcd0dcf14d04e1b89695]
+link owner to frontend--><g id="link_owner_frontend"><path d="M140.31,126.19 C176.91,164 223.57,212.2 256.13,245.82 " fill="none" id="owner-to-frontend" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="262.03,251.93,258.6127,244.0992,254.3063,248.277,262.03,251.93" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="201.5" y="168.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="197.5" y="182.1074">[HTTP]</text></g><!--MD5=[22d8080b2f3d5cd2e4dbd4b6611650f5]
+link editor to frontend--><g id="link_editor_frontend"><path d="M295.5,126.19 C295.5,163.21 295.5,210.2 295.5,243.71 " fill="none" id="editor-to-frontend" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="295.5,251.93,298.5,243.93,292.5,243.93,295.5,251.93" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="300.5" y="168.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="296.5" y="182.1074">[HTTP]</text></g><!--MD5=[cf3a48bf8fcdad0e85ec70d823b7387f]
+link reader to frontend--><g id="link_reader_frontend"><path d="M466.79,126.19 C426.22,164.16 374.47,212.6 338.51,246.24 " fill="none" id="reader-to-frontend" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="332.44,251.93,340.3343,248.6619,336.2388,244.277,332.44,251.93" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="438.5" y="168.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="434.5" y="182.1074">[HTTP]</text></g><!--MD5=[de207495061c1d44d3c64fbcfc90e100]
+link frontend to backendForFrontend--><g id="link_frontend_backendForFrontend"><path d="M295.5,323.09 C295.5,346.45 295.5,377.66 295.5,403.69 " fill="none" id="frontend-to-backendForFrontend" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="295.5,411.95,298.5,403.95,292.5,403.95,295.5,411.95" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="300.5" y="365.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="296.5" y="379.1074">[HTTP]</text></g><!--MD5=[4f5ea87f9f8bbe9b5505751e774e5de2]
+link backendForFrontend to backend--><g id="link_backendForFrontend_backend"><path d="M287.7,497.14 C283.22,521.04 277.53,551.45 272.59,577.8 " fill="none" id="backendForFrontend-to-backend" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="271.08,585.83,275.5013,578.5189,269.6038,577.4145,271.08,585.83" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="287.5" y="539.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="283.5" y="553.1074">[HTTP]</text></g><!--MD5=[ae8f8d2604f46f9c0f01e6ef0c8773df]
+link backend to database--><g id="link_backend_database"><path d="M335.87,638 C371.15,638 414.06,638 453.2,638 " fill="none" id="backend-to-database" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="461.49,638,453.49,635,453.49,641,461.49,638" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="354" y="632.1387">Reads/Writes</text></g><!--MD5=[ff0e1ca89d71832f1d9d093a6c995479]
+reverse link backend to service--><g id="link_backend_service"><path d="M343.39,665.6 C428.88,693.47 566.8,738.72 685.5,779 C690.5,780.7 695.63,782.45 700.81,784.23 " fill="none" id="backend-backto-service" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="335.54,663.04,342.2201,668.3669,344.0756,662.661,335.54,663.04" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="120" x="593.5" y="732.1387">Get configuration</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="110" x="598.5" y="746.1074">[HTTP/Websocket]</text></g><!--MD5=[5336af3f4e1a0cd7cab34f8c39d33eba]
+link backend to eventBus--><g id="link_backend_eventBus"><path d="M261.5,690.41 C261.5,721.12 261.5,759 261.5,784.56 " fill="none" id="backend-to-eventBus" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="261.5,792.73,264.5,784.73,258.5,784.73,261.5,792.73" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="127" x="262.5" y="732.1387">Integration Events</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="267.5" y="746.1074">[Publish/Subscribe]</text></g><rect height="130.0781" rx="7.5" ry="7.5" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="151" x="701" y="865"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="707" y="885.9951">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="766" y="885.9951"> </text><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="139" x="707" y="889.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="711" y="902.292">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="139" x="707" y="905.5938"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="711" y="918.5889">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="139" x="707" y="921.8906"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="711" y="934.8857">container</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="139" x="707" y="938.1875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="711" y="951.1826">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="139" x="707" y="954.4844"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="711" y="967.4795">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="139" x="707" y="970.7813"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="711" y="983.7764">external container</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="873" y2="873"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="889.2969" y2="889.2969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="905.5938" y2="905.5938"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="921.8906" y2="921.8906"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="938.1875" y2="938.1875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="954.4844" y2="954.4844"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="970.7813" y2="970.7813"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="846" y1="987.0781" y2="987.0781"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="707" x2="707" y1="873" y2="987.0781"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="846" x2="846" y1="873" y2="987.0781"/><!--MD5=[c7a04c6947ba7c90f04a4b75f23781f6]
+@startuml C2 Containers
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(owner, "Owner", "Owner of an client")
+Person(editor, "Editor", "Editor access to an client")
+Person(reader, "Reader", "Read access to an client")
+
+System_Boundary(c1, "Alinea") {
+    Container(frontend, "Web frontend", "", "GUI for the application")
+    Container(backend, "Configuration Management", ".NET Core", "Backend")
+    Container(backendForFrontend, "Backend for Frontend", ".NET Core", "API")
+    ContainerDb(database, "Database", "", "Data about clients, environments, cluster etc..", "")
+    ContainerQueue(eventBus, "Event Bus", "Integration Events")
+}
+System_Ext(service, "External Service", "3rd party service")
+
+Rel(owner, frontend, "Uses", "HTTP")
+Rel(editor, frontend, "Uses", "HTTP")
+Rel(reader, frontend, "Uses", "HTTP")
+
+Rel(frontend, backendForFrontend, "Uses", "HTTP")
+Rel(backendForFrontend, backend, "Uses", "HTTP")
+
+Rel_R(backend, database, "Reads/Writes", "")
+Rel_U(service, backend, "Get configuration", "HTTP/Websocket")
+Rel_D(backend, eventBus, "Integration Events", "Publish/Subscribe")
+
+LAYOUT_WITH_LEGEND()
+
+@enduml
+
+@startuml C2 Containers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rectangle "<$person>\n==Owner\n\n Owner of an client" <<person>> as owner 
+rectangle "<$person>\n==Editor\n\n Editor access to an client" <<person>> as editor 
+rectangle "<$person>\n==Reader\n\n Read access to an client" <<person>> as reader 
+
+rectangle "==Alinea\n<size:12>[System]</size>" <<boundary>> as c1  {
+    rectangle "==Web frontend\n\nGUI for the application" <<container>> as frontend 
+    rectangle "==Configuration Management\n//<size:12>[.NET Core]</size>//\n\nBackend" <<container>> as backend 
+    rectangle "==Backend for Frontend\n//<size:12>[.NET Core]</size>//\n\nAPI" <<container>> as backendForFrontend 
+    database "==Database\n\nData about clients, environments, cluster etc.." <<container>> as database 
+    queue "==Event Bus\n//<size:12>[Integration Events]</size>//" <<container>> as eventBus 
+}
+rectangle "==External Service\n\n 3rd party service" <<external_system>> as service 
+
+owner - ->> frontend : **Uses**\n//<size:12>[HTTP]</size>//
+editor - ->> frontend : **Uses**\n//<size:12>[HTTP]</size>//
+reader - ->> frontend : **Uses**\n//<size:12>[HTTP]</size>//
+
+frontend - ->> backendForFrontend : **Uses**\n//<size:12>[HTTP]</size>//
+backendForFrontend - ->> backend : **Uses**\n//<size:12>[HTTP]</size>//
+
+backend -RIGHT->> database : **Reads/Writes**
+service -UP->> backend : **Get configuration**\n//<size:12>[HTTP/Websocket]</size>//
+backend -DOWN->> eventBus : **Integration Events**\n//<size:12>[Publish/Subscribe]</size>//
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+endlegend
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 12:55:52 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

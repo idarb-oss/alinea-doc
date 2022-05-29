@@ -1,5 +1,5 @@
 site_name: Alinea
-copyright: Copyright &copy; 2021 - 2021 Idar Bergli
+copyright: Copyright &copy; 2022 Idar Bergli
 repo_name: idarb-oss/alinea-doc
 repo_url: https://github.com/idarb-oss/alinea-doc
 
@@ -23,15 +23,30 @@ nav:
   - Architecture:
     - 'Components': 'architecture/components.md'
     - 'Hardware': 'architecture/hardware.md'
-  - Libraries:
-    - Overview: 'libs/overview.md'
-    - Python:
-      - Core: 'libs/python/core.md'
   - Services:
-    - Overview: 'services/overview.md'
-    - 'Tenant Manager': 'services/tenant-manager.md'
+    - Overview: 'services/index.md'
+    - 'Configuration Manager':
+      - Overview: 'services/configuration-management/index.md'
+      - Domain: 'services/configuration-management/domain.md'
+      - Architecture: 'services/configuration-management/architecture.md'
+    - 'Feature Flagging':
+      - Overview: 'services/feature-flagging/index.md'
+      #- Domain: 'services/configuration-management/domain.md'
+      #- Architecture: 'services/configuration-management/architecture.md'
   - 'Decission Log':
     - Overview: 'decission-log/overview.md'
+    - ADR:
+      - 0001-record-architecture-descisions: 'decission-log/adr/0001-record-architecture-decisions.md'
+      - 0002-use-modular-monolith-architecture: 'decission-log/adr/0002-use-modular-monolith-architecture.md'
+      - 0003-use-dotnetcore-and-csharp: 'decission-log/adr/0003-use-dotnetcore-and-csharp.md'
+      - 0004-create-facade-between-api-and-business-module: 'decission-log/adr/0004-create-facade-between-api-and-business-module.md'
+      - 0005-use-cqrs-architectural-style: 'decission-log/adr/0005-use-cqrs-architectural-style.md'
+      - 0006-allow-return-result-after-command-processing: 'decission-log/adr/0006-allow-return-result-after-command-processing.md'
+      - 0007-use-feature-slicing: 'decission-log/adr/0007-use-feature-slicing.md'
+      - 0008-create-rich-domain-models: 'decission-log/adr/0008-create-rich-domain-models.md'
+      - 0009-use-domain-driven-design-tactical-patterns: 'decission-log/adr/0009-use-domain-driven-design-tactical-patterns.md'
+      - 0010-protect-business-invariants-using-exceptions: 'decission-log/adr/0010-protect-business-invariants-using-exceptions.md'
+      - 0011-event-driven-communication-between-modules: 'decission-log/adr/0011-event-driven-communication-between-modules.md'
 
 
 theme:

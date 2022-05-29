@@ -1,0 +1,28 @@
+@startuml C2 Containers
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(owner, "Owner", "Owner of an client")
+Person(editor, "Editor", "Editor access to an client")
+Person(reader, "Reader", "Read access to an client")
+
+System_Boundary(c1, "Alinea") {
+    Container(frontend, "Web frontend", "", "GUI for the application")
+    Container(backend, "Configuration Management", ".NET Core", "Backend")
+    Container(backendForFrontend, "Backend for Frontend", ".NET Core", "API")
+    ContainerDb(database, "Database", "", "Data about clients, environments, cluster etc..", "")
+    ContainerQueue(eventBus, "Event Bus", "Integration Events")
+}
+
+Rel(owner, frontend, "Uses", "HTTP")
+Rel(editor, frontend, "Uses", "HTTP")
+Rel(reader, frontend, "Uses", "HTTP")
+
+Rel(frontend, backendForFrontend, "Uses", "HTTP")
+Rel(backendForFrontend, backend, "Uses", "HTTP")
+
+Rel_R(backend, database, "Reads/Writes", "")
+Rel_D(backend, eventBus, "Integration Events", "Publish/Subscribe")
+
+LAYOUT_WITH_LEGEND()
+
+@enduml

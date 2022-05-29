@@ -14,18 +14,39 @@ date: 2021-03-28
 
 > "Beginning of a new way of thinking" or _a linea_, refering to &para; new paragraph.
 
-Alinea is trial to look into how to get an on-premise solution for data gathering / collection from devices in an industiral setting. 
+Alinea is a collection of services to create a chassis for services. Tough this is a start of it all, we will end up with an data platform based on the [IBM best practise architecture](https://developer.ibm.com/articles/eda-and-microservices-architecture-best-practices/).
+
 ## What to solve
 
-- **Multi-tenancy** how can be have a split diffrent parts in their own tenants.
-- **Non-intrusive** microservice to enable deep customization in multi-tenancy.
-- **Discovery** how do we learn about other nodes and services on the network.
-- **Presence** how do we track when other nodes and services come and go.
-- **Connectivity** how do we actually connect one node or service to another.
-- **Point-to-point messaging** how do we send a message from one node or service to another.
-- **Group messaging** how do we send a message from one node or service to a group of others.
-- **Distributed Logging** how do we track what this cloud of nodes/service is doing so we can detect performance problems and failures.
-- **Content distribution** how do we send content from one node or service to another.
+**User Access**
+
+- [ ] _Tenant_ have own user management and access control for the system
+- [ ] _Identity_ represetns users or clients that can access parts of the system
+- [ ] _Roles_ represents collection of permissions and not permissions that identities can have
+- [ ] _Permissions_ are fine graned permissions that identities can have to access systems 
+
+**Configuration Management**
+
+- [ ] _Clients_ (Services) with different configurations
+- [ ] _Environment_ different clients is running in with different configurations
+- [ ] _Clusters_ services can be running in different clusters and with that have different configurations
+- [ ] _Section_ configuration can be divided into different sections with items
+    - [ ] _Item_ belongs to sections wich are configurations for the client
+- [ ] _Templates_ Create default templates that can be automaticaly created when creating new clients
+
+**Feature Flagging**
+
+- [ ] **Feature Flagging**: A common way to control features in youre environment, both for configuration and feature development
+
+**Governance**
+
+- [ ] **Policy Management**: How to fullfill governance by using policy control points
+
+### External Services
+
+**Networking**
+
+- [ ] [_Consul_](https://www.hashicorp.com/products/consul) use consul to setup secure connections and servie discovery
 
 ## License MIT
 

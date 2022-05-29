@@ -1,0 +1,45 @@
+@startuml C3 Components
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+System_Boundary(c1, "Alinea") {
+    Container(frontend, "Web Frontend", "", "GUI for the application")
+    
+    ComponentQueue(eventBus, "Events Bus", "Integration Events")
+    
+    Boundary(myMeetingsApi, "Alinea Backend", "Runtime") {
+        Component(api, "API", ".NET Core API")
+        Component(backendForFrontend, "Backend for Frontend", ".NET Core API")
+        Component(configMgmt, "Configuration Management", ".NET Libraries")
+        Component(featureFlag, "Feature Flagging", ".NET Libraries")
+        Component(userAccess, "User Access", ".NET Libraries")
+    }
+    
+    Boundary(database, "Database") {
+        ComponentDb(configMgmtData, "Configuration Management data", "")
+        ComponentDb(featureFlagData, "Feature Flagging data", "")
+        ComponentDb(userAccessData, "User Access data", "")
+    }
+}
+
+System_Ext(service, "Service")
+    
+Rel(frontend, backendForFrontend, "Uses", "HTTP")
+Rel_R(backendForFrontend, api, "Uses")
+Rel(service, api, "Uses")
+
+
+Rel(api, configMgmt, "Uses")
+Rel(api, featureFlag, "Uses")
+Rel(api, userAccess, "Uses")
+
+Rel(configMgmt, eventBus, "Integration Events", "Publish/Subscribe")
+Rel(featureFlag, eventBus, "Integration Events", "Publish/Subscribe")
+Rel(userAccess, eventBus, "Integration Events", "Publish/Subscribe")
+
+Rel(configMgmt, configMgmtData, "Store / retrieve")
+Rel(featureFlag, featureFlagData, "Store / retrieve")
+Rel(userAccess, userAccessData, "Store / retrieve")
+
+LAYOUT_WITH_LEGEND()
+
+@enduml

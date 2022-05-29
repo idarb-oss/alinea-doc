@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1007px" preserveAspectRatio="none" style="width:533px;height:1007px;background:#FFFFFF;" version="1.1" viewBox="0 0 533 1007" width="533px" zoomAndPan="magnify"><defs/><g><!--MD5=[84dda40acb3410cad7262261daba2aaf]
+cluster c1--><g id="cluster_c1"><rect height="809" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="418" x="109" y="7"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="55" x="290.5" y="23.8516">Alinea</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="61" x="287.5" y="38.7637">[System]</text></g><!--MD5=[7a0a654d606ac0410822d25d04406c4f]
+cluster myMeetingsApi--><g id="cluster_myMeetingsApi"><rect height="394" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="248" x="133" y="204"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="137" x="188.5" y="220.8516">Alinea Backend</text></g><!--MD5=[db65ce44d5e360fb4ec835f941dc7573]
+cluster database--><g id="cluster_database"><rect height="133" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="216" x="287" y="659"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="86" x="352" y="675.8516">Database</text></g><!--MD5=[b1e3d2dcb3697de9e6328d1cb436cbc4]
+entity frontend--><g id="elem_frontend"><rect fill="#438DD5" height="71.2188" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="179" x="167.5" y="58"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="193" y="82.8516">Web Frontend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="255" y="99.6201"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="177.5" y="115.917">GUI for the application</text></g><!--MD5=[e3e91991f24f92e737d9e6cb749965e2]
+entity eventBus--><g id="elem_eventBus"><path d="M130,714.5 L262,714.5 C267,714.5 267,735.7969 267,735.7969 C267,735.7969 267,757.0938 262,757.0938 L130,757.0938 C125,757.0938 125,735.7969 125,735.7969 C125,735.7969 125,714.5 130,714.5 " fill="#85BBF0" style="stroke:#78A8D8;stroke-width:0.5;"/><path d="M262,714.5 C257,714.5 257,735.7969 257,735.7969 C257,757.0938 262,757.0938 262,757.0938 " fill="none" style="stroke:#78A8D8;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="100" x="141" y="734.3516">Events Bus</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="122" x="130" y="749.2637">[Integration Events]</text></g><!--MD5=[e2307af040e3f87d22824e7603ca28ec]
+entity api--><g id="elem_api"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="112" x="175" y="383"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="30" x="216" y="407.8516">API</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="92" x="185" y="422.7637">[.NET Core API]</text></g><!--MD5=[8646c2813b1a4602b37914127a769b9c]
+entity backendForFrontend--><g id="elem_backendForFrontend"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="216" x="149" y="241"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="196" x="159" y="265.8516">Backend for Frontend</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="92" x="211" y="280.7637">[.NET Core API]</text></g><!--MD5=[9dac54f65036664bf9f12b83590a6d96]
+entity configMgmt--><g id="elem_configMgmt"><rect fill="#85BBF0" height="71.2188" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="157" y="511"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="122" x="167" y="535.8516">Configuration</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="118" x="172" y="554.4766">Management</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="93" x="184.5" y="569.3887">[.NET Libraries]</text></g><!--MD5=[db985c929159c1a3b26a0d2a5aff0658]
+entity configMgmtData--><g id="elem_configMgmtData"><path d="M302.5,706 C302.5,696 395,696 395,696 C395,696 487.5,696 487.5,706 L487.5,766.2188 C487.5,776.2188 395,776.2188 395,776.2188 C395,776.2188 302.5,776.2188 302.5,766.2188 L302.5,706 " fill="#85BBF0" style="stroke:#78A8D8;stroke-width:0.5;"/><path d="M302.5,706 C302.5,716 395,716 395,716 C395,716 487.5,716 487.5,706 " fill="none" style="stroke:#78A8D8;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="122" x="331" y="734.8516">Configuration</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="165" x="312.5" y="753.4766">Management data</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="57" x="366.5" y="768.3887">[schema]</text></g><!--MD5=[38bfa9dc6018363cafe15f923a4b8db9]
+entity service--><g id="elem_service"><rect fill="#999999" height="38.625" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="86" x="7" y="248"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="66" x="17" y="272.8516">Service</text></g><!--MD5=[de207495061c1d44d3c64fbcfc90e100]
+link frontend to backendForFrontend--><g id="link_frontend_backendForFrontend"><path d="M257,129.31 C257,159.54 257,203.06 257,232.93 " fill="none" id="frontend-to-backendForFrontend" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="257,240.97,260,232.97,254,232.97,257,240.97" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="262" y="171.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="258" y="185.1074">[HTTP]</text></g><!--MD5=[b9380aa68cf636284033ec6e3b500825]
+link backendForFrontend to api--><g id="link_backendForFrontend_api"><path d="M252.23,294.18 C248.02,316.87 241.84,350.13 237.24,374.93 " fill="none" id="backendForFrontend-to-api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="235.74,382.98,240.1485,375.6612,234.2491,374.5671,235.74,382.98" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="251" y="336.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="247" y="350.1074">[HTTP]</text></g><!--MD5=[5b8a9060ea31594e37857eeb5560fa47]
+link api to configMgmt--><g id="link_api_configMgmt"><path d="M231,436.21 C231,455 231,480.91 231,502.79 " fill="none" id="api-to-configMgmt" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="231,510.96,234,502.96,228,502.96,231,510.96" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="32" x="232" y="478.1387">Uses</text></g><!--MD5=[c9ac2ccb7b8f3d2c52a705f57f7262ad]
+link configMgmt to eventBus--><g id="link_configMgmt_eventBus"><path d="M222.08,582.24 C219.62,592.44 217.06,603.63 215,614 C208.78,645.34 203.31,681.59 199.86,706.17 " fill="none" id="configMgmt-to-eventBus" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="198.73,714.36,202.8009,706.8482,196.8578,706.0236,198.73,714.36" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="127" x="216" y="626.1387">Integration Events</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="221" y="640.1074">[Publish/Subscribe]</text></g><!--MD5=[bc2d6848434cb4f7d4474890568fc09a]
+link configMgmt to configMgmtData--><g id="link_configMgmt_configMgmtData"><path d="M305.06,579.42 C320.78,588.79 336.17,600.29 348,614 C366.06,634.92 377.6,663.56 384.73,687.73 " fill="none" id="configMgmt-to-configMgmtData" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="386.98,695.74,387.7107,687.2273,381.9331,688.8459,386.98,695.74" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="103" x="366" y="633.1387">Store / retrieve</text></g><!--MD5=[0444f432f4d8ee6faebf03a2c3725c6e]
+link service to api--><g id="link_service_api"><path d="M59.68,287.12 C70.19,305.83 88.52,334.47 111,353 C127.5,366.6 147.87,377.65 167.12,386.2 " fill="none" id="service-to-api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="174.72,389.48,168.5653,383.5539,166.1862,389.0621,174.72,389.48" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="120" x="112" y="336.1387">Get configuration</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="110" x="117" y="350.1074">[HTTP/Websocket]</text></g><rect height="162.6719" rx="7.5" ry="7.5" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="164" x="347" y="829"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="353" y="849.9951">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="412" y="849.9951"> </text><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="853.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="357" y="866.292">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="869.5938"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="357" y="882.5889">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="885.8906"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="357" y="898.8857">container</text><rect fill="#85BBF0" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="902.1875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="357" y="915.1826">component</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="918.4844"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="357" y="931.4795">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="934.7813"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="357" y="947.7764">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="951.0781"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="357" y="964.0732">external container</text><rect fill="#CCCCCC" height="16.2969" style="stroke:none;stroke-width:1.0;" width="152" x="353" y="967.375"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="357" y="980.3701">external component</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="837" y2="837"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="853.2969" y2="853.2969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="869.5938" y2="869.5938"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="885.8906" y2="885.8906"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="902.1875" y2="902.1875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="918.4844" y2="918.4844"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="934.7813" y2="934.7813"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="951.0781" y2="951.0781"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="967.375" y2="967.375"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="505" y1="983.6719" y2="983.6719"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="353" x2="353" y1="837" y2="983.6719"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="505" x2="505" y1="837" y2="983.6719"/><!--MD5=[2b3589436689d415a74e8196a68e2bf1]
+@startuml C3 Components
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+System_Boundary(c1, "Alinea") {
+    Container(frontend, "Web Frontend", "", "GUI for the application")
+    
+    ComponentQueue(eventBus, "Events Bus", "Integration Events")
+    
+    Boundary(myMeetingsApi, "Alinea Backend") {
+        Component(api, "API", ".NET Core API")
+        Component(backendForFrontend, "Backend for Frontend", ".NET Core API")
+        Component(configMgmt, "Configuration Management", ".NET Libraries")
+    }
+    
+    Boundary(database, "Database") {
+        ComponentDb(configMgmtData, "Configuration Management data", "schema")
+    }
+}
+
+System_Ext(service, "Service", "")
+    
+Rel(frontend, backendForFrontend, "Uses", "HTTP")
+Rel(backendForFrontend, api, "Uses", "HTTP")
+Rel(api, configMgmt, "Uses")
+
+Rel(configMgmt, eventBus, "Integration Events", "Publish/Subscribe")
+
+Rel(configMgmt, configMgmtData, "Store / retrieve")
+
+Rel(service, api, "Get configuration", "HTTP/Websocket")
+
+LAYOUT_WITH_LEGEND()
+
+@enduml
+
+@startuml C3 Components
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rectangle "==Alinea\n<size:12>[System]</size>" <<boundary>> as c1  {
+    rectangle "==Web Frontend\n\nGUI for the application" <<container>> as frontend 
+    
+    queue "==Events Bus\n//<size:12>[Integration Events]</size>//" <<component>> as eventBus 
+    
+    rectangle "==Alinea Backend" <<boundary>> as myMeetingsApi  {
+        rectangle "==API\n//<size:12>[.NET Core API]</size>//" <<component>> as api 
+        rectangle "==Backend for Frontend\n//<size:12>[.NET Core API]</size>//" <<component>> as backendForFrontend 
+        rectangle "==Configuration Management\n//<size:12>[.NET Libraries]</size>//" <<component>> as configMgmt 
+    }
+    
+    rectangle "==Database" <<boundary>> as database  {
+        database "==Configuration Management data\n//<size:12>[schema]</size>//" <<component>> as configMgmtData 
+    }
+}
+
+rectangle "==Service" <<external_system>> as service 
+    
+frontend - ->> backendForFrontend : **Uses**\n//<size:12>[HTTP]</size>//
+backendForFrontend - ->> api : **Uses**\n//<size:12>[HTTP]</size>//
+api - ->> configMgmt : **Uses**
+
+configMgmt - ->> eventBus : **Integration Events**\n//<size:12>[Publish/Subscribe]</size>//
+
+configMgmt - ->> configMgmtData : **Store / retrieve**
+
+service - ->> api : **Get configuration**\n//<size:12>[HTTP/Websocket]</size>//
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#85BBF0> component |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+|<#CCCCCC> external component |
+endlegend
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 12:55:52 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

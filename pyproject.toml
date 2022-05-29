@@ -5,7 +5,7 @@ description = ""
 authors = ["Idar Bergli <idarb@pm.me>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 mkdocs = "^1.1.2"
 mkdocs-material = "^7.1.1"
 mkdocs-git-revision-date-plugin = "^0.3.1"

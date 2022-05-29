@@ -1,0 +1,18 @@
+@startuml C1 System Context
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(owner, "Owner", "Owner of an client")
+Person(editor, "Editor", "Editor access to an client")
+Person(reader, "Reader", "Read access to an client")
+
+System(configMgmt, "Configuration Management")
+System_Ext(external, "Service")
+
+Rel(owner, configMgmt, "Create new client")
+Rel(editor, configMgmt, "Edit configuration")
+Rel(reader, configMgmt, "Read configuration")
+
+Rel(external, configMgmt, "Get configuration", "HTTP/Websocket")
+
+LAYOUT_WITH_LEGEND()
+@enduml

@@ -1,0 +1,103 @@
+@startuml
+scale max 2000 width
+
+package "User Access" #f3e8f8 {
+object Permission
+object "Role" as Role
+object User
+object "User Registration" as UserRegistration
+enum "User Registration Status" as UserRegistrationStatus
+{
+  WaitingForConfirmation
+  Confirmed
+  Expired
+}
+
+User "1"-->"0..*" Role : has
+User --> UserRegistration : created for
+Role "1..*"-->"1..*" Permission : has
+UserRegistration --> UserRegistrationStatus : is in
+
+}
+
+
+package "Configuration Management" #ffc1c1 {
+
+object "Payer" as Payer
+object "Meeting Fee" as MeetingFee
+object "Meeting Fee Payment" as MeetingFeePayment
+object "Subscription" as Payments.Subscription
+object "Subscription Payment" as SubscriptionPayment
+object "Subscription Renewal Payment" as SubscriptionRenewalPayment
+object "Price List" as PriceList
+object "Price List Item" as PriceListItem
+
+enum "Subscription Status" as SubscriptionStatus
+{
+  Active
+  Expired
+}
+enum "Subscription Payment Status" as SubscriptionPaymentStatus
+{
+  WaitingForPayment
+  Paid
+  Expired
+}
+enum "Subscription Renewal Payment Status" as SubscriptionRenewalPaymentStatus
+{
+  WaitingForPayment
+  Paid
+  Expired
+}
+enum "Meeting Fee Payment Status" as MeetingFeePaymentStatus
+{
+  WaitingForPayment
+  Paid
+  Expired
+}
+enum "Price List Item Category" as PriceListItemCategory
+{
+  New
+  Renewal
+}
+enum "Subscription Period" as SubscriptionPeriod
+{
+  Month
+  HalfYear
+}
+
+
+
+Payer "1"-->"0..*" MeetingFee : pays for
+Payer "1"--> "0..*" Payments.Subscription : buys
+
+MeetingFeePayment "0..*"-->"1" MeetingFee : for
+MeetingFeePayment --> MeetingFeePaymentStatus : is in
+
+Payments.Subscription "1"-->"0..*" SubscriptionRenewalPayment: extended by
+Payments.Subscription --> SubscriptionStatus : is in
+Payments.Subscription --> SubscriptionPeriod : is for
+
+SubscriptionPayment "1..*"-->"1" Payments.Subscription : is for
+SubscriptionPayment --> SubscriptionPaymentStatus : is in
+SubscriptionPayment --> SubscriptionPeriod : is for
+
+SubscriptionRenewalPayment --> SubscriptionRenewalPaymentStatus: is in
+SubscriptionRenewalPayment --> SubscriptionPeriod : is for
+
+PriceListItem --> SubscriptionPeriod : is for
+PriceListItem "0..*"-->"1" Country: is for
+PriceListItem --> PriceListItemCategory : is for
+
+PriceList "1"-->"1..*" PriceListItem : contains
+
+
+Payer --> Member: is a
+Payer --> User: is a
+
+Payments.Subscription -- Meeting.MemberSubscription
+}
+
+package "Feature Flagging" #e4f7e4 {
+}
+@enduml
